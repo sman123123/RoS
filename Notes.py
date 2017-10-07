@@ -241,9 +241,178 @@
 
 
         #Offensive Maneuver Activation Costs
-            
+            #Brawling
+                #Bash: 0/1
+                #Beat: (3)
+                #Bind & Strike: (3)
+                #Cut: (3)
+                #Disarm: 3
+                #Double Attack: (2)
+                #Evasive Attack: (2)
+                #Grapple: 1
+                #Hook: (3)
+                #Master Strike: (5)
+                #Murder Stroke: (4)
+                #Simultaneous Block/Strike: 1
+                #Thrust: (3)
 
+            #Cut & Thrust
+                #Bash: (2)
+                #Beat: 0
+                #Bind & Strike: 0
+                #Cut: 0
+                #Disarm: 1
+                #Double Attack: 1
+                #Evasive Attack: 1
+                #Grapple: (2)
+                #Hook: (2)
+                #Master Strike: 4
+                #Murder Stroke: (2)
+                #Simultaneous Block/Strike: 0
+                #Thrust: 0
 
+            #Dagger
+                #Bash: 1 (2)
+                #Beat: (3)
+                #Bind & Strike: (2)
+                #Cut: 0
+                #Disarm: 2
+                #Double Attack: 1
+                #Evasive Attack: 1
+                #Grapple: 1
+                #Hook: (3)
+                #Master Strike: (5)
+                #Murder Stroke: (4)
+                #Simultaneous Block/Strike: 1
+                #Thrust: 0
+
+            #Greatsword
+                #Bash: (1)
+                #Beat: 0
+                #Bind & Strike: (2)
+                #Cut: 1
+                #Disarm: 1
+                #Double Attack: (3)
+                #Evasive Attack: 1
+                #Grapple: (3)
+                #Hook: (2)
+                #Master Strike: 3
+                #Murder Stroke: 1
+                #Simultaneous Block/Strike: (3)
+                #Thrust: 0
+
+            #Lance
+                #Bash: -
+                #Beat: -
+                #Bind & Strike: -
+                #Cut: -
+                #Disarm: -
+                #Double Attack: -
+                #Evasive Attack: -
+                #Grapple: -
+                #Hook: -
+                #Master Strike: -
+                #Murder Stroke: -
+                #Simultaneous Block/Strike: 0
+                #Thrust: 1
+
+            #Longsword
+                #Bash: (1)
+                #Beat: 0
+                #Bind & Strike: (1)
+                #Cut: 0
+                #Disarm: 1
+                #Double Attack: (2)
+                #Evasive Attack: 1
+                #Grapple: (2)
+                #Hook: (2)
+                #Master Strike: 3
+                #Murder Stroke: 1
+                #Simultaneous Block/Strike: (2)
+                #Thrust: 0
+
+            #Mass Weapon & Shield
+                #Bash: 0
+                #Beat: 1
+                #Bind & Strike: 0
+                #Cut: 0
+                #Disarm: 1
+                #Double Attack: (3)
+                #Evasive Attack: 2
+                #Grapple: (3)
+                #Hook: 1
+                #Master Strike: (5)
+                #Murder Stroke: (2)
+                #Simultaneous Block/Strike: 0
+                #Thrust: 1
+
+            #Pole-arms
+                #Bash: 0
+                #Beat: 0
+                #Bind & Strike: (3)
+                #Cut: 0
+                #Disarm: 2
+                #Double Attack: (4)
+                #Evasive Attack: 1
+                #Grapple: (3)
+                #Hook: 1
+                #Master Strike: (6)
+                #Murder Stroke: (2)
+                #Simultaneous Block/Strike: (3)
+                #Thrust: 0
+
+            #Spear & Shield
+                #Bash: (1)
+                #Beat: 1
+                #Bind & Strike: 0
+                #Cut: (1)
+                #Disarm: (3)
+                #Double Attack: (4)
+                #Evasive Attack: 2
+                #Grapple: (4)
+                #Hook: 1
+                #Master Strike: (6)
+                #Murder Stroke: (3)
+                #Simultaneous Block/Strike: 0
+                #Thrust: 0
+
+            #Sword & Shield
+                #Bash: (1)
+                #Beat: 0
+                #Bind & Strike: 0
+                #Cut: 0
+                #Disarm: 1
+                #Double Attack: (3)
+                #Evasive Attack: 2
+                #Grapple: (3)
+                #Hook: (2)
+                #Master Strike: 4
+                #Murder Stroke: 1
+                #Simultaneous Block/Strike: 0
+                #Thrust: 0
+
+            #Wrestling
+                #Bash: 1 / 2
+                #Beat: (3)
+                #Bind & Strike: (3)
+                #Cut: (3)
+                #Disarm: 2
+                #Double Attack: (3)
+                #Evasive Attack: (4)
+                #Grapple: 0
+                #Hook: (2)
+                #Master Strike: (6)
+                #Murder Stroke: (4)
+                #Simultaneous Block/Strike: 2
+                #Thrust: (3)
+
+            #Feint & Swing, Feint & Thrust, and Half-Sword are available for all Proficiencies at identical variable Activation Costs explained in the Maneuver descriptions.
+            #Activation Costs in parentheses are those not normally taught with a certain Proficiency, but that might come up for use in an unusual situation.
+            #*Brawling: Bash Activation Cost 0 is for punches, 1 for kicks and any other Bashes that might come up.
+            #**Dagger: Bash Activation Cost 1 is for punches, 2 for any other Bashes that might come up.
+            #***Wrestling: Bash Activation Cost 1 is for punches, 2 for kicks and any other Bashes that might come up.
+
+#Page 80
 
 
 
