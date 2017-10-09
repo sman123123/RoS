@@ -634,17 +634,86 @@
                 #Rota: (3)
                 #Winding & Binding: (3)
 
-#Page 81
+#Evasion and Half-Sword are available for all Proficiencies at identical, variable Activation Costs explained in the Maneuver descriptions.
+#Activation Costs in parentheses are those not normally taught with a certain Proficiency, but that might come up for use in unusual situation.
+#* Mass Weapon & Shield: Lower of two given Activation Costs is for use without shield.
+#** Sword & Shield: Lower of two given Activation Costs is for use without shield.
 
+#1. LIMELIGHT AND THE COMBAT ROUND
+#The basic temporal unit any Combat Scene in Blade is the Combat Round. During the Combat Round, every combatant has dice to spend on action equal to his Melee Pool. 
+#Players will have to be judicious about what activities they spend their MP dice on, and all associated costs to their MP pool. A subdivision of the Combat Round is the Exchange, with every Combat Round consisting of two. 
+#The Exchange is thus the shortest temporal division of a Combat Scene, which ultimately consists of any number of Combat Rounds, each made up of a pair of Exchanges.
 
+#2. THE ORDER OF A COMBAT ROUND
+#A Combat Round is fought in the following sequence:
+#1) All stances are declared.
+#2) Aggressor and defender is established (initiative). Melee Pool fills/refreshes, with all Modifiers.
+#3) During the first half of the Combat Round, the first Exchange, the aggressor attacks and defender defends.
+#4) Damage is resolved and/or new attitude determined (aggressor or defender).
+#5) During the second half of the Combat Round, the second Exchange, the aggressor attacks and defender defends. These roles may have been reversed since the first Exchange.
+#6) All damage is resolved and/or new attitude determined (aggressor or defender).
+#Steps 2-6 continue to repeat until the resolution of the combat, or until the flow of combat is interrupted otherwise (a pause). At the beginning of each new melee conflict (or following a pause) begin at step 1, then repeat 2-6 as normal.
 
+#3. STEPS 1 & 2: STANCES, INITIATIVE, AND SURPRISE
+#Unless taken by surprise, combatants will usually have time and opportunity to declare a stance – these should be clearly announced at the table. 
+#Stances potentially provide for a stronger attack or defence, though perhaps adding some rigidity to a combatant’s action.
+#Though every school speaks with confidence on the superiority of its teaching, three stances are universal; Aggressive, Defensive, and Neutral stances.
 
+#Aggressive stances provide an attack bonus at the cost of making one’s defense more difficult. Such stances add 2 MP dice for an attack but increase activation costs for any Defensive Maneuver by 2 MP.
+#Defensive stances grant a defensive bonus while making attack execution more difficult. Such stances add 2 MP dice when Defending but increase the activation costs for any Offensive Maneuver by 2 MP.
+#Neutral stances are the favorite of many. In a Neutral stance one’s weapon is positioned to allow for either quick attack or defensive response. Neutral stances provide no bonus to either attack or defense.
+#Note: Stances are only in effect until the first blow or movement — once a character’s weapon moves, the stance is gone. Once melee is joined the stances of both attacker and defender are treated as neutral, with no bonus conveyed to either. A stance cannot be taken (or regained) until the combatants separate for a full pause.
+#Initiative is determined after any stances are declared, when each combatant announces their intent to either attack or defend.
+#The intent of the combatants will usually be very clear from the circumstances under which they enter combat – more often than not, one or even both will charge the other. Apart from of course counting as an aggressive stance, such a charge automatically suggests the intent to attack, leaving the other party to decide whether to receive the charge with a defence or to himself attack.
+#Some rare combat encounters, for example formal duels or gladiatorial bouts, may however start out less unambiguous, with both combatants gauging each other, shifting from stance to stance and waiting for an opening in their opponent’s defence to attack. In these cases it is advisable to demand that both parties declare intent to attack or defend simultaneously, maybe by lifting one finger for attack and two for defence. Until at least one party declares attack, the bout does not actually commence.
+#If a party fails to declare intent while the other declares attack, then this character is considered to have hesitated and may only defend for one full Combat Round – if even that (see Surprise).
+#The attacker, now having the initiative, declares how many dice from his Melee Pool are being spent on the attack, where the attack is aimed, and what Maneuver, if any, is being used. 
+#The defender in response to the attacker declares how many dice from his Melee Pool are going towards defense, what defense is being used, and what Maneuver, if any, is being executed. If both combatants declare as aggressors, Offensive Maneuvers and assigned dice are announced before the Reflex Check to see who goes fractionally first. The combatant with the higher Reflex may choose whether to declare first or second; tied Reflex scores are broken by the higher CG score, and tied CG scores by the higher Proficiency.
+#An Opposed Reflex Check (with the combatants’ own ATNs for Target Numbers— see the Appendix for weapon ATNs) then determines whose strike lands first. For every step of Reach difference of the weapons used, the wielder of the longer weapon receives 1 bonus dice to this Check, and the wielder of the shorter weapon is penalized 1 die. In the rare cases where the combat begins at the optimum engagement range of the shorter Reach weapon, these modifiers are reversed.
+#Note that no defense is possible in the middle of an attack, so the loser of this Check will likely be killed. In the Exchange that follows, the winner of this Exchange now assumes the role of aggressor and his opponent that of defender. Should the Opposed Reflex Check be tied, both combatants strike at exactly the same time.
+#Stealing Initiative is only and exclusively possible immediately before the first blows of any bout are traded and is usually done in one of two circumstances: 
+#The first is when two combatants declare as aggressors and attack simultaneously.
+#If one combatant turns out to be fractionally slower than the other, he may attempt to Steal Initiative, but if both combatants attack at exactly the same time, the combatant with the higher Reflex score is the one first entitled to attempt to Steal Initiative; tied Reflex scores are broken by the higher CG score, and tied CG scores by the higher Proficiency. Should he decline to try Stealing Initiative, the other combatant may then opt to attempt to.
+#The party attempting to Steal Initiative pays an Actiation Cost equal to half his opponent’s SY (0.50 rounds up).
+#The attempt itself is an Opposed Check between the initiator’s CG and his opponent’s DG.
+#This contest is modified by differences in the Reach of the weapons used; if there is any difference, the wielder of the longer weapon receives a flat +1 die bonus on his Check while the wielder of the shorter weapon must incur a flat -1 die penalty.
+#When the combatants begin the bout already at the Reach of the shorter of the weapons involved, the above modifiers are reversed: Shorter weapons garner a flat +1 die bonus, and longer weapons a flat -1 die penalty.
+#Finally, the initiator of the attempt, and only he, may buy bonus dice for his Check by spending dice from his MP on a one-to-one basis, up to the value of his DG rating.
+#PAs do not modify to this check, as PAs are added to one’s MP pool at the beginning of the combat scene, and are thus already accounted.
+#The winner of the Opposed Check strikes first, and the loser, should he still be able to continue after his opponent’s attack, second. In a tie, both combatants strike simultaneously, which might well result in the death of both. In any case, a combatant who had the Initiative stolen from him may immediately try to steal it back. Such attempts to Steal Initiative or steal it back may theoretically continue until one party depletes his MP.
+#The second situation where one may wish to Steal Initiative can occur when a character who has previously declared defense wishes to switch over and instead attack. The process is identical to that described above.
+#Surprise can occur at any time, even when you suspect that danger is near. When a Surprise Check is called for, the player checks Reflex against TN7, with the difficulty based on how alert the character or NPC was. Table 4.1, Surprise Difficulties, provides guidelines. Failure indicates no action can be taken until the next Combat Round. 
+#Meeting the required number of successes means that the target may defend themselves (or attempt to Steal Initiative).
 
-
-
-
-
-
-
-
-
+#4. STEPS 3 & 5: THE EXCHANGE 
+#Again, each Combat Round consists of two Exchanges. During an Exchange each of the participants may perform but one action, usually attacking or defending by use of a single one of either the Offensive or Defensive Maneuvers. 
+#Someone who is one in the role of aggressor may utilize both Offensive and Defensive Maneuvers, though will of course usually not choose one of the latter. Someone who is in the role of defender may freely utilize nothing but Defensive Maneuvers, but may choose to execute an Offensive Maneuver instead if he pays a special Activation Cost (see below).
+#All attacks must be aimed at a specific locale; those numbered 1-14 (see Table 4.1). Arrows indicate swing target zones, while circles mark zones for thrusting or missile attacks. 
+#While a player need not declare a specific number, he must describe the attack in terms that may be easily understood, i.e., Thrust to the face, Slash to the right foot, etc.), as random attacks are not a part of Blade melee. Maneuvers and chosen target zones may increase or decrease TNs for both attacker and defender alike, and may also require an additional Activation Cost: Optionally, all melee thrusts to head and limbs (target zones 8, 9, 13, and 14) require an additional 1 point Activation Cost to execute. 
+#Both participants now roll the allotted Dice from their Melee Pool (See Step 2), with all modifiers totaled from all Maneuvers, stances, or other situations factors. 
+#This is a normal Opposed Check, where one party’s Victories are subtracted from the other’s, leaving the winner with a net Quality of Success. An attack is successfully executed if the attacker achieves a QoS of 1 or more. Ties in the Opposed Check or an outright QoS in the defender’s favor denote a successful defence.
+#All Target Numbers for this Check come from the ATN (Attack Target Number, used when attacking) or DTN (Defense Target Number, used when defending) listed with each weapon (see the Appendix) or defence.
+#After all damage is resolved, a winning aggressor maintains his role as aggressor, unless he declines it, or cannot continue because of depleted MP, while conversely his opponent still retains uncommitted MP dice. If either is the case, the defender may choose to take on the role of aggressor.
+#With a successful defence, the defender may now take on the role of aggressor, unless he merely tied the aggressor, in which case the latter retains his role.
+#Some Defensive Maneuvers may on a case-by-case basis allow a successful defender to either assume the role of aggressor upon a tie, or upon paying an additional Activation Cost, or perhaps under no circumstances at all. Any such special mechanics are explained within their respective Maneuvers.
+#Finally, should a defender enter a new Exchange and wishes to execute an Offensive Maneuver and attack, regardless of the consequences, he may declare an Offensive Maneuver like the aggressor, announcing both his Maneuver for the Exchange and the number of dice allocated to it. 
+#This declaration of an Offensive Maneuver carries an Activation Cost equal to half the aggressor’s DG (0.50 rounds up, as always), above and beyond any normal Activation Cost for the Offensive Maneuver.
+#In such circumstances, the aggressor resolves his Maneuver first and only then does the defender resolve his Offensive Maneuver, should he still have the required dice in his MP to do so.
+#Sneaking in an attack does not in itself turn the previous defender into the aggressor; he still begins the next Exchange as the defender, and his opponent the aggressor. However, should the defender manage to inflict a higher wound level upon the aggressor than he received himself, he now assumes the role of aggressor.
+#Visibility has a profound effect on combat. In dim lighting (for example, dusk) deduct 1 die from all Melee Pools. During hours of darkness (moonlight) reduce all MPs to ¾. In pitch black conditions drop all MPs to half value.
+#Archery Pools are effected twice as severly as MPs. Deduct 2 dice from all APs for dim lighting and drop it to half value for darkness. In pitch black conditions, all APs are at 0 dice.
+#Weapon Reach plays an enormous role in any combat. Weapon Reach is in six distinct Steps:
+#1. Hand: Fists, daggers, knee-strikes, grappling, etc.
+#2. Short: Long daggers, shortswords, maces, etc.
+#3. Medium: Arming swords, ball-and-chains, sabers, short spears, etc.
+#4. Long: Hand-and-a-half swords, rapiers, spears, short pole-arms, etc.
+#5. Very Long: Greatswords, long pole-arms, etc.
+#6. Extremely Long: Lances, pikes, etc.
+#Attacks against a longer weapon are made at -1 MP for each “Step” (i.e.: Short to Medium, or Medium to Long) the attacker wishes to close; attacking a pikeman with a dagger would cost 5MP! 
+#This penalty holds until the shorter weapon makes a damaging strike, after which the penalty transfers to the longer weapon until he scores a damaging blow, when again the penalty goes to the shorter weapon. When the shorter weapon is out orange this penalty applies only to attacks; when the longer weapon is penalized, it applies to both offense and defense. 
+#Often the best course of action for long weapons is to use a full evasion in the event of sudden close combat, or to drop weapons and wrestle!
+#Certain maneuvers (such as the Half-sword) are particularly effective in such situations. 
+#Likewise, many weapons—such as spears and other two-handed weapons—may shorten their reach.
+#Botching in combat is left for the referee to introduce as Complications at dra-matic moments, to spice up events, increase tension, and put pressure on the PCs. Still, if a group absolutely feels it has to have a mechanic for random botches, this optional rule can be used:
+#When an attack or defence comes up with 0 successes, a botch results. No Com-plication arises from this botch, but the character’s MP for the remainder of the Combat Round, or the following Combat Round if the botch occurs on the second Exchange, is reduced by the number of dice rolled on the botched Check.
+#In addition, if the botched roll was made with 5+ dice, something else detrimental also happens. The exact nature of this fumble is up to the referee, but most likely occurrences are the weapon breaking or slipping from the character’s hand, or the character slipping and falling.
