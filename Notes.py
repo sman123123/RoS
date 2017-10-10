@@ -714,332 +714,113 @@
 
 #6. TERRAIN CHECKS
 #Terrain Checks in Blade take place within the abstracted combat environment. 
-#During a melee, it is not only common but actually necessary that combatants 
-twist and turn about, advance and step back, so that once a combat begins, all fight-
-ers will by default move significantly from the spot they occupied at its outset. 
+#During a melee, it is not only common but actually necessary that combatantstwist and turn about, advance and step back, so that once a combat begins, all fight-ers will by default move significantly from the spot they occupied at its outset. 
 #Even a single Combat Round might easily shift the combatants as much as five meters in an unforeseen direction, and frequently more; that’s the nature of footwork.
-#Once a combat with multiple fighters has been underway for even one Round, it is nigh impossible to determine where anyone is in respect to anyone else – except 
-as it relates to one’s own immediate opponents. 
+#Once a combat with multiple fighters has been underway for even one Round, it is nigh impossible to determine where anyone is in respect to anyone else – except as it relates to one’s own immediate opponents. 
 #Their own footwork, the press of enemies, and wheeling manoeuvres will have carried every pair of fighters in a largely random direction, where allies who started out fighting side by side will by necessity find themselves separated very quickly. 
 #In short, as long a Limelight is underway, it is impossible to tell where anyone is in respect to anyone else.
 #Locations are roughly re-established once a Limelight ends, and with certainty when a Round of Limelights completes. Positions are determined by the ref ’s common sense, based on what has happened during the previous Round of Limelights. 
 #As a player vividly describes his combat actions, the ref is encouraged to take note and visualize the PCs end location within the combat environment. It can thus happen that a player finds his PC in a location where he doesn’t want him to be, which is only a concern if the PC is desperately needed elsewhere. 
-#If the character wants to engage somebody who is quite distance away, or get to any other location in the combat environment, this is not handled by measuring
-movement, but by a Terrain Check.
-A Terrain Check is made with dice from the character’s MP – any number of dice, 
-player’s choice. The ref sets the Difficulty of the Check by how far and over what dif-
-ficult terrain the character will have to move, but it will rarely, if ever, be greater than 
-a Difficult Challenge Rating. 
-If the optional Encumbrance rules are being used, every Terrain Check other than 
-one for bad footing or refusing to be dislodged from a fixed location carries an Acti-
-vation Cost that can be found in Table 5.3. If several such Terrain Checks should be 
-made during the same Combat Round, this Activation Cost must be paid separately 
-for every Check.
-If the Check is passed, the character arrives at the point he wanted to reach “in 
-time”, whatever that may mean (usually to engage somebody in melee with the dice 
-remaining in his MP), and if not, he arrives there “late”.
-Example: Returning to where we abandoned Otho in the previous example, right 
-after spending a point of Drama to have his Limelight out of the usual order to rush 
-to Rufo’s aid, the ref tells Otho’s player that 2 Successes on the Terrain Check are 
-necessary to get to Rufo’s side in time. 
-Playing it safe, Otho’s player opts to spend 6 dice, and achieves 3 successes. Rush-
-ing at Rufo’s enemy, Otho attacks with the remaining dice in his MP, just in time to 
-save his companion.
-Failing this kind of Terrain Check should only rarely, if at all, be interpreted as the 
-player having wasted his Limelight on a failed attempt. Instead, the ref should give 
-him something else to do, or a new unexpected challenge. 
-A failure might for example be interpreted as the character being intercepted by 
-new enemy, if applicable.
-The use of Terrain Checks are not limited to simply getting somewhere on time. A 
-Terrain Check may also be needed to navigate an area with poor footing. 
-Normal footing like broken ground, light snow, mud, or deep sand do not neces-
-sitate a Check, but truly poor areas such as steep, slippery slopes, scree fields, stairs, 
-narrow ledges, ice, deep snow, or water and the like, do. 
-If all combatants of a particular Melee are on this kind of difficult ground, 2 dice 
-are deducted from everyone’s MP and the need for a Check simply done away with. 
-If only one combatant is on poor ground, a Terrain Check must be made for that 
-character. 
-If he achieves even a single Success with the dice he sets aside for this purpose, he 
-can act and move normally, but if not, he slips, stumbles, or falls down.
-It is thus clearly advantageous to fight on level ground while forcing one’s oppo-
-nent into a position of poor footing. Provided there is poor ground nearby, Terrain 
-Checks can also be used to force an opponent onto such bad footing, and keep him 
-there, or to get out of it oneself. 
-Such attempts are handled through an Opposed Terrain Check.
-The initiator of the attempt announces a number of dice from his MP to be used,
-after which his opponent sets aside a number of dice from his MP as well, then both 
-roll. To win the contest, the initiator needs a Quality of Success of 1 if he is currently 
-the aggressor, or 2 if the defender – it is easier to force somebody somewhere than 
-to lure him. 
-This can even be used to force somebody over a nearby drop, but only if initiated 
-by the aggressor. As people are remarkably reluctant to fall from heights, success on 
-such an attempt does not simply require a Quality of Success of 1, but now at least 3, 
-provided that the drop is of a kind likely to injure the falling person.
-In many cases, somebody on bad footing facing an enemy on level ground need 
-not force his opponent back so that he can get firm footing himself, but may well opt 
-to simply step back up a pace or two, enticing the opponent to follow him onto the 
-disadvantageous ground and thus evening the odds. 
-This need merely be announced and requires just a normal Terrain Check to avoid 
-slippage on the poor surface, no opposed roll needed; if the opponent declines to 
-follow, the bout ends.
-However, it is not always feasible to entice the opponent to follow; sometimes one 
-will want to, and have to, fight one’s way onto the opponent’s better ground. 
-If the opponent is for example holding the head of a stairway or the top of a steep 
-slope against all comers, no normal amount of enticement will force him down to 
-his opponent.
-While these cases assume at least some room for lateral movement on the holding 
-character’s part, there may be other scenarios, where he cannot move anywhere at 
-all, such as when defending a doorway. 
-While such positions are advantageous in terms of limiting the number of pos-
-sible attackers, they interdict footwork and thus cramp combat performance. 
-An attempt to remain firmly in one spot requires but one Success on a Terrain 
-Check – if unopposed. If an enemy is actively trying to dislodge one from a position 
-he is holding, the Terrain Check becomes Opposed. 
-The initiator of the attempt, who must be the current aggressor, declares the num-
-ber of dice committed, after which his enemy does the same, then both roll. To dis-
-lodge the holding person, a victory with a QoS of 1+ is needed; ties signify that the 
-holding opponent remains firmly in place.
-Higher footing (as provided by stairs or horses) adds 2 MP at the beginning of the 
-Round (Step 2). This also affects attack zone targeting for all involved combatants 
-according to common sense. 
-Finally, Terrain Checks can be used by a player with multiple opponents to avoid 
-facing several at once. By moving so that his opponents foul each other’s attacks, 
-and by exploiting the environment, the combatant tries to limit the number of op-
-ponents he fights this Combat Round. If these opponents are important NPCs, the 
-Terrain Check is an Opposed one. 
-The player declares which opponent he wants to avoid. This opponent announces 
-a number of dice from his MP to oppose the PC’s attempt to avoid him, and the
-player then sets aside a number of dice from his MP himself. An Opposed Check 
-using these dice is then made. A Quality of Success of 0 suffices to attain the play-
-er’s objective if the PC wasn’t engaged with the opponent in the previous Combat 
-Round, but a QoS of 1 is required to avoid an opponent with whom he was previ-
-ously engaged.
-This means of breaking off a combat bout can only be used if facing multiple op-
-ponents at once, as it represents moving in a manner that has one opponent getting 
-in the other’s way. If facing only one opponent, a bout can only be broken off after a 
-successful Full Evasion, or if both combatants decline to attack.
-If the first opponent is thus avoided, the next opponent is treated in the same 
-fashion. A number of dice from both MPs are again set aside and an Opposed Check 
-made. The QoS of the previous Opposed Terrain Check for avoiding the first oppo-
-nent is added as bonus dice to this second Check. There are no additional Checks 
-needed, as it is physically impossible for more than three opponents to beset the 
-same person at the same time.
-If the enemies aren’t important NPCs, the Terrain Check is unopposed. If the PC 
-is trying to avoid one of his two opponents, he simply needs a Quality of Success of 1.
-If he is facing three opponents, a Quality of Success of 3 is required to avoid two 
-opponents, while a QoS of 2 avoids one. At the very outset of the battle, the required 
-QoS for avoiding one or two out of three opponents are reduced by one, provided 
-the PC is not surrounded by his opponents. A QoS of 2 avoids two out of three op-
-ponents, and a QoS of 1 one out of three. As soon as the PC has become engaged in 
-combat with any of his opponents, this reduced QoS to avoid opponents no longer 
-applies, nor does it apply if the PC started out surrounded or in a comparably dis-
-advantageous position.
-Please note that a character may use a Terrain Check to move into positions 
-where the number of opponents who can engage him at once is limited, for example 
-with his back against a wall. In such an instance a maximum of only two, not three 
-opponents can attempt to engage the character at the same time.
-There are a few further uses for Terrain Checks, which are discussed in the section 
-on ranged combat.
-7. FATIGUE IN THE COMBAT SCENE
-Fatigue is an optional rule used only in combat situations. No one enters a Com-
-bat Scene fatigued – if he might be considered fatigued from previous strenuous 
-activity, the rush of adrenaline at the onset of a new combat can be considered to 
-have temporarily drowned out any previous exhaustion.
-At the end of every Limelight, a character who engaged in highly strenuous activ-
-ity like fighting must check BN, the Challenge Level of this Check being equal to 
-one’s Encumbrance level plus one, or 1 if the optional Encumbrance mechanic is not 
-being used. Passion Atributes do not aid with this Check, but the rules for automatic
-successes (dice pool higher than three times the required QoS) do apply; dropping 
-from fatigue is not something much in keeping with most protagonists of Sword & 
-Sorcery.
-If this Check is failed, the character accrues a penalty of 2 dice on his MP, AP and 
-SP pools, similar to (and cumulative with) diziness from Blood Loss. Also as with 
-Blood Loss, his Attribute and Skill Checks will need 1 additional Success per full 4 
-dice Fatigue penalty to MP, AP and SP. Unlike Blood Loss, the BN Check to avoid 
-further Fatigue is not exempt from this requirement for additional Successes.
-All Fatigue is reduced to 0 by spending but a single Limelight resting and catching 
-one’s breath (no more strenuous activity than walking slowly). If a character spends 
-a Limelight in light activity (nothing more strenuous than a slow jog), his Fatigue 
-penalty is reduced by 2.
-II. Defense 
-Defense focuses squarely on a warrior’s efforts to avoid being struck by an op-
-ponent. 
-1. EVASION 
-Evasion can be done by anyone and used with every Proficiency. It doesn’t carry 
-any Activation Cost, unless the character is encumbered and the optional Encum-
-brance rules are being used. In that case, there is an Activation Cost; it can be found 
-on Table 5.3.
-Table 4.3 provides TNs for the three common 
-forms of evasion.
-Full Evasion if successful, brings all melee to a 
-halt as the fighters separate and possibly attempt to 
-re-establish initiative. The bout ends, at least for the 
-moment, and stances can once again be assumed. If 
-a character conducts multiple Full Evasions during 
-an Exchange, the QoS of the immediately preceding 
-Full Evasion is added as bonus dice to the immedi-
-ately following Full Evasion.
-Partial Evasion, if successful, does not allow the defender to assume the role of 
-aggressor as usual. No matter what the actual QoS of the successful Partial Evasion, 
-assuming the role of aggressor requires the immediate expenditure of 2 MP. If the 
-successful defender is unwilling or unable to spend those dice out of the MP still 
-remaining for the Exchange on which the Partial Evasion was performed, the ag
-gressor retains his role.
-Duck and Weave if successful, gives the evading warrior a great opportunity to 
-strike his opponent. He automatically assumes the role of aggressor (even if his QoS 
-was merely 0) and moves into the optimum range for his weapon’s Reach. His op-
-ponent may not employ a shield against his follow-up attack on the next Exchange, 
-and loses dice from his MP equal to the successes on the attack roll Duck and Weave 
-defended against successfully. Should this penalty take the MP into the negative 
-range, those dice are added as bonus dice to the other party’s MP.
-Evasion can also be used to defend against missile attacks, provided the defending 
-person is aware of them. The TN for this is 8 (Partial Evasion) for thrown weapons, 
-and 10 (“Duck and Weave”) for arrows, crossbow bolts, and bullets.
-If the defending person is both aware that a gun, bow, or crossbow is being aimed 
-at him, and has the opportunity to start evasive movement before the missile is fired, 
-the Evasion TN is now merely 8 (Partial Evasion). This represents weaving around 
-in a highly unpredictable way. If the character is at the time engaged in a bout of 
-melee combat, his unpredictable combat moves automatically count as this type of 
-weaving movement, allowing him to use the Partial Evasion TN against a missile 
-attack.
-Evading missile attacks as outlined above is also possible when a character is not 
-in a melee situation. In this case, he may use dice equal to half his best MP, even if he 
-may not currently have the equipment necessary for fighting with that Proficiency 
-at hand. Applicable PAs figure normally in this halved MP, i.e. they are added before 
-dividing the pool in two.
-When a character does during an Exchange use Duck & Weave as a defense 
-against either a melee or a missile attack, the result of this single Duck & Weave is 
-applied against all missile attacks aimed at him during this Exchange. Equally, if a 
-character not currently in a melee is fired upon uses Evasion to defend against one 
-missile attack, the result of this one roll is applied against all missile attacks upon 
-him within this Combat Round. 
-Should he be targeted by both thrown and launched weapons, requiring differ-
-ent TNs to defend against (8 and 10), a single roll is still used to defend against all 
-of them, but this roll will still cover two different QoSs, one against TN 8 and one 
-against TN 10.
-Example: Otho evades both a javelin and a crossbow. He is not aware of the cross-
-bowman and does not use erratic movement, so his DTN against the javelin is 8 and 
-against the crossbow bolt 10. His MP is 13, but a she is currently not in a melee, he 
-rolls half his MP, i.e. 7 dice. The dice come up 2, 5, 6, 7, 8, 10, 12 – he has 3 successes 
-against the javelin (8, 10, 12) and 2 against the crossbow (10, 12).
-If somebody fires into a melee combat, the missile attack is always resolved on 
-Exchange 1.
-2. DEFENSIVE ACTIONS
-The bedrock of all Defensive Maneuvers discussed in Chapter Three is the Block, 
-the Parry, and the before mentioned Evasion. Most defensive Maneuvers are directly 
-tied to these basics.
-Parrying is the preferred defense of warriors everywhere. Most warriors grasp 
-the basic idea of turning the attack of an opponent’s weapon with their own. Any 
-amount of MP dice may be devoted to parrying while defending. The challenge of 
-deflecting another’s weapon is reflected by the defending weapon’s Defense Target 
-Number (DTN).
-Some weapon schools, for instance those of the Cut & Thrust Proficiency, teach 
-using a secondary parrying weapon, usually a dagger, in the off hand, allowing the 
-person thus armed to potentially parry twice in a single Exchange or to perform 
-such Maneuvers as Simultaneous Block/Strike. 
-However, though parrying does not involve great manual dexterity, a person’s sec-
-ondary arm is still handicapped. The DTN of any parry conducted with the offhand 
-is therefore increased by +1.
-Blocking is the action of interposing an object, usually a shield, between oneself 
-and the attack, perhaps in a rather unsophisticated way, but also by skilfully angling 
-a shield, or using it offensively to beat aside an attacking weapon. 
-In this use it is not dissimilar to parrying. Every blocking object is assigned a TN 
-for defending with it, this TN being dependent on the size of the object, and how 
-quickly and gracefully it can be moved. 
-It is thus almost identical to a weapon’s DTN, but with one important difference: 
-Shields (and only shields, not improvised blocking objects like chairs and the like) 
-are designed to be used in the offhand and therefore suffer no penalty for being used 
-with the “wrong” hand. 
-Shields are divided into three types, depending on size; Large, small, and bucklers.
-A large shield is just that – a very large shield, measuring over one meter in length 
-if an oblong shape, or having a diameter of not much less than one meter if more 
-squarish or round. It offers superior protection but is unwieldy to carry about and
-very awkward to use on horseback as one’s horse constantly gets in the way of the 
-shield. On the positive side, most large shields are big enough to completely hunker 
-down behind, removing its owner, provided he remains static, completely from the 
-danger of missile attacks.
+#If the character wants to engage somebody who is quite distance away, or get to any other location in the combat environment, this is not handled by measuring movement, but by a Terrain Check.
+#A Terrain Check is made with dice from the character’s MP – any number of dice, player’s choice. The ref sets the Difficulty of the Check by how far and over what dif-ficult terrain the character will have to move, but it will rarely, if ever, be greater than a Difficult Challenge Rating. 
+#If the optional Encumbrance rules are being used, every Terrain Check other than one for bad footing or refusing to be dislodged from a fixed location carries an Activation Cost that can be found in Table 5.3. If several such Terrain Checks should be made during the same Combat Round, this Activation Cost must be paid separately for every Check.
+#If the Check is passed, the character arrives at the point he wanted to reach “in time”, whatever that may mean (usually to engage somebody in melee with the dice remaining in his MP), and if not, he arrives there “late”.
+#Example: Returning to where we abandoned Otho in the previous example, right after spending a point of Drama to have his Limelight out of the usual order to rush to Rufo’s aid, the ref tells Otho’s player that 2 Successes on the Terrain Check are necessary to get to Rufo’s side in time. 
+#Playing it safe, Otho’s player opts to spend 6 dice, and achieves 3 successes. Rushing at Rufo’s enemy, Otho attacks with the remaining dice in his MP, just in time to save his companion.
+#Failing this kind of Terrain Check should only rarely, if at all, be interpreted as the player having wasted his Limelight on a failed attempt. Instead, the ref should give him something else to do, or a new unexpected challenge. 
+#A failure might for example be interpreted as the character being intercepted by new enemy, if applicable.
+#The use of Terrain Checks are not limited to simply getting somewhere on time. A Terrain Check may also be needed to navigate an area with poor footing. 
+#Normal footing like broken ground, light snow, mud, or deep sand do not necessitate a Check, but truly poor areas such as steep, slippery slopes, scree fields, stairs, narrow ledges, ice, deep snow, or water and the like, do. 
+#If all combatants of a particular Melee are on this kind of difficult ground, 2 dice are deducted from everyone’s MP and the need for a Check simply done away with. If only one combatant is on poor ground, a Terrain Check must be made for that character. 
+#If he achieves even a single Success with the dice he sets aside for this purpose, he can act and move normally, but if not, he slips, stumbles, or falls down.
+#It is thus clearly advantageous to fight on level ground while forcing one’s oppo-nent into a position of poor footing. Provided there is poor ground nearby, Terrain Checks can also be used to force an opponent onto such bad footing, and keep him there, or to get out of it oneself. 
+#Such attempts are handled through an Opposed Terrain Check.
+#The initiator of the attempt announces a number of dice from his MP to be used,after which his opponent sets aside a number of dice from his MP as well, then both roll. To win the contest, the initiator needs a Quality of Success of 1 if he is currently the aggressor, or 2 if the defender – it is easier to force somebody somewhere than to lure him. 
+#This can even be used to force somebody over a nearby drop, but only if initiated by the aggressor. As people are remarkably reluctant to fall from heights, success on such an attempt does not simply require a Quality of Success of 1, but now at least 3, provided that the drop is of a kind likely to injure the falling person.
+#In many cases, somebody on bad footing facing an enemy on level ground need not force his opponent back so that he can get firm footing himself, but may well opt to simply step back up a pace or two, enticing the opponent to follow him onto the disadvantageous ground and thus evening the odds. 
+#This need merely be announced and requires just a normal Terrain Check to avoid slippage on the poor surface, no opposed roll needed; if the opponent declines to follow, the bout ends.
+#However, it is not always feasible to entice the opponent to follow; sometimes one will want to, and have to, fight one’s way onto the opponent’s better ground. 
+#If the opponent is for example holding the head of a stairway or the top of a steep slope against all comers, no normal amount of enticement will force him down to his opponent.
+#While these cases assume at least some room for lateral movement on the holding character’s part, there may be other scenarios, where he cannot move anywhere at all, such as when defending a doorway. 
+#While such positions are advantageous in terms of limiting the number of possible attackers, they interdict footwork and thus cramp combat performance. 
+#An attempt to remain firmly in one spot requires but one Success on a Terrain Check – if unopposed. If an enemy is actively trying to dislodge one from a position he is holding, the Terrain Check becomes Opposed. 
+#The initiator of the attempt, who must be the current aggressor, declares the number of dice committed, after which his enemy does the same, then both roll. To dislodge the holding person, a victory with a QoS of 1+ is needed; ties signify that the holding opponent remains firmly in place.
+#Higher footing (as provided by stairs or horses) adds 2 MP at the beginning of the Round (Step 2). This also affects attack zone targeting for all involved combatants according to common sense. 
+#Finally, Terrain Checks can be used by a player with multiple opponents to avoid facing several at once. By moving so that his opponents foul each other’s attacks, and by exploiting the environment, the combatant tries to limit the number of op-ponents he fights this Combat Round. If these opponents are important NPCs, the Terrain Check is an Opposed one. 
+#The player declares which opponent he wants to avoid. This opponent announces a number of dice from his MP to oppose the PC’s attempt to avoid him, and the player then sets aside a number of dice from his MP himself. An Opposed Check using these dice is then made. A Quality of Success of 0 suffices to attain the player’s objective if the PC wasn’t engaged with the opponent in the previous Combat Round, but a QoS of 1 is required to avoid an opponent with whom he was previously engaged.
+#This means of breaking off a combat bout can only be used if facing multiple opponents at once, as it represents moving in a manner that has one opponent getting in the other’s way. If facing only one opponent, a bout can only be broken off after a successful Full Evasion, or if both combatants decline to attack.
+#If the first opponent is thus avoided, the next opponent is treated in the same fashion. A number of dice from both MPs are again set aside and an Opposed Check made. The QoS of the previous Opposed Terrain Check for avoiding the first opponent is added as bonus dice to this second Check. There are no additional Checks needed, as it is physically impossible for more than three opponents to beset the same person at the same time.
+#If the enemies aren’t important NPCs, the Terrain Check is unopposed. If the PC is trying to avoid one of his two opponents, he simply needs a Quality of Success of 1.
+#If he is facing three opponents, a Quality of Success of 3 is required to avoid two opponents, while a QoS of 2 avoids one. At the very outset of the battle, the required QoS for avoiding one or two out of three opponents are reduced by one, provided the PC is not surrounded by his opponents. A QoS of 2 avoids two out of three opponents, and a QoS of 1 one out of three. As soon as the PC has become engaged in combat with any of his opponents, this reduced QoS to avoid opponents no longer applies, nor does it apply if the PC started out surrounded or in a comparably disadvantageous position.
+#Please note that a character may use a Terrain Check to move into positions where the number of opponents who can engage him at once is limited, for example with his back against a wall. In such an instance a maximum of only two, not three opponents can attempt to engage the character at the same time.
+#There are a few further uses for Terrain Checks, which are discussed in the section on ranged combat.
+
+#7. FATIGUE IN THE COMBAT SCENE
+#Fatigue is an optional rule used only in combat situations. No one enters a Combat Scene fatigued – if he might be considered fatigued from previous strenuous activity, the rush of adrenaline at the onset of a new combat can be considered to have temporarily drowned out any previous exhaustion.
+#At the end of every Limelight, a character who engaged in highly strenuous activity like fighting must check BN, the Challenge Level of this Check being equal to one’s Encumbrance level plus one, or 1 if the optional Encumbrance mechanic is not being used. Passion Atributes do not aid with this Check, but the rules for automaticsuccesses (dice pool higher than three times the required QoS) do apply; dropping from fatigue is not something much in keeping with most protagonists of Sword & Sorcery.
+#If this Check is failed, the character accrues a penalty of 2 dice on his MP, AP and SP pools, similar to (and cumulative with) diziness from Blood Loss. Also as with Blood Loss, his Attribute and Skill Checks will need 1 additional Success per full 4 dice Fatigue penalty to MP, AP and SP. Unlike Blood Loss, the BN Check to avoid further Fatigue is not exempt from this requirement for additional Successes.
+#All Fatigue is reduced to 0 by spending but a single Limelight resting and catching one’s breath (no more strenuous activity than walking slowly). If a character spends a Limelight in light activity (nothing more strenuous than a slow jog), his Fatigue penalty is reduced by 2.
+
+#II. Defense 
+#Defense focuses squarely on a warrior’s efforts to avoid being struck by an opponent. 
+
+#1. EVASION 
+#Evasion can be done by anyone and used with every Proficiency. It doesn’t carry any Activation Cost, unless the character is encumbered and the optional Encumbrance rules are being used. In that case, there is an Activation Cost; it can be found on Table 5.3.
+#Table 4.3 provides TNs for the three common forms of evasion.
+#Full Evasion if successful, brings all melee to a halt as the fighters separate and possibly attempt to re-establish initiative. The bout ends, at least for the moment, and stances can once again be assumed. If a character conducts multiple Full Evasions during an Exchange, the QoS of the immediately preceding Full Evasion is added as bonus dice to the immediately following Full Evasion.
+#Partial Evasion, if successful, does not allow the defender to assume the role of aggressor as usual. No matter what the actual QoS of the successful Partial Evasion, assuming the role of aggressor requires the immediate expenditure of 2 MP. If the successful defender is unwilling or unable to spend those dice out of the MP still remaining for the Exchange on which the Partial Evasion was performed, the aggressor retains his role.
+#Duck and Weave if successful, gives the evading warrior a great opportunity to strike his opponent. He automatically assumes the role of aggressor (even if his QoS was merely 0) and moves into the optimum range for his weapon’s Reach. His opponent may not employ a shield against his follow-up attack on the next Exchange, and loses dice from his MP equal to the successes on the attack roll Duck and Weave defended against successfully. Should this penalty take the MP into the negative range, those dice are added as bonus dice to the other party’s MP.
+#Evasion can also be used to defend against missile attacks, provided the defending person is aware of them. The TN for this is 8 (Partial Evasion) for thrown weapons, and 10 (“Duck and Weave”) for arrows, crossbow bolts, and bullets.
+#If the defending person is both aware that a gun, bow, or crossbow is being aimed at him, and has the opportunity to start evasive movement before the missile is fired, the Evasion TN is now merely 8 (Partial Evasion). This represents weaving around in a highly unpredictable way. If the character is at the time engaged in a bout of melee combat, his unpredictable combat moves automatically count as this type of weaving movement, allowing him to use the Partial Evasion TN against a missile attack.
+#Evading missile attacks as outlined above is also possible when a character is not in a melee situation. In this case, he may use dice equal to half his best MP, even if he may not currently have the equipment necessary for fighting with that Proficiency at hand. Applicable PAs figure normally in this halved MP, i.e. they are added before dividing the pool in two.
+#When a character does during an Exchange use Duck & Weave as a defense against either a melee or a missile attack, the result of this single Duck & Weave is applied against all missile attacks aimed at him during this Exchange. Equally, if a character not currently in a melee is fired upon uses Evasion to defend against one missile attack, the result of this one roll is applied against all missile attacks upon him within this Combat Round. 
+#Should he be targeted by both thrown and launched weapons, requiring different TNs to defend against (8 and 10), a single roll is still used to defend against all of them, but this roll will still cover two different QoSs, one against TN 8 and one against TN 10.
+#Example: Otho evades both a javelin and a crossbow. He is not aware of the crossbowman and does not use erratic movement, so his DTN against the javelin is 8 and against the crossbow bolt 10. His MP is 13, but a she is currently not in a melee, he rolls half his MP, i.e. 7 dice. The dice come up 2, 5, 6, 7, 8, 10, 12 – he has 3 successes against the javelin (8, 10, 12) and 2 against the crossbow (10, 12).
+#If somebody fires into a melee combat, the missile attack is always resolved on Exchange 1.
+
+#2. DEFENSIVE ACTIONS
+#The bedrock of all Defensive Maneuvers discussed in Chapter Three is the Block, the Parry, and the before mentioned Evasion. Most defensive Maneuvers are directly tied to these basics.
+#Parrying is the preferred defense of warriors everywhere. Most warriors grasp the basic idea of turning the attack of an opponent’s weapon with their own. Any amount of MP dice may be devoted to parrying while defending. The challenge of deflecting another’s weapon is reflected by the defending weapon’s Defense Target Number (DTN).
+#Some weapon schools, for instance those of the Cut & Thrust Proficiency, teach using a secondary parrying weapon, usually a dagger, in the off hand, allowing the person thus armed to potentially parry twice in a single Exchange or to perform such Maneuvers as Simultaneous Block/Strike. 
+#However, though parrying does not involve great manual dexterity, a person’s secondary arm is still handicapped. The DTN of any parry conducted with the offhand is therefore increased by +1.
+#Blocking is the action of interposing an object, usually a shield, between oneself and the attack, perhaps in a rather unsophisticated way, but also by skilfully angling a shield, or using it offensively to beat aside an attacking weapon. 
+#In this use it is not dissimilar to parrying. Every blocking object is assigned a TN for defending with it, this TN being dependent on the size of the object, and how quickly and gracefully it can be moved. 
+#It is thus almost identical to a weapon’s DTN, but with one important difference: Shields (and only shields, not improvised blocking objects like chairs and the like) are designed to be used in the offhand and therefore suffer no penalty for being used with the “wrong” hand. 
+#Shields are divided into three types, depending on size; Large, small, and bucklers.
+#A large shield is just that – a very large shield, measuring over one meter in length if an oblong shape, or having a diameter of not much less than one meter if more squarish or round. It offers superior protection but is unwieldy to carry about andvery awkward to use on horseback as one’s horse constantly gets in the way of the shield. On the positive side, most large shields are big enough to completely hunker down behind, removing its owner, provided he remains static, completely from the danger of missile attacks.
 #Chart page 118
-A small shield is anything clearly larger than a buckler and smaller than a large 
-shield. It is very versatile and of equal use on foot or horseback.
-Finally, a buckler is a very small, but agile shield, never strapped to the arm, but 
-always carried in a fist grip. It is rarely any larger than 0.3 meters in diameter.
-All types of shields have variable DTNs against different forms of attack such as 
-melee, missile attacks with thrown weapons such as javelins or hatchets, or against 
-“fired” projectiles like arrows, crossbow bolts, and sling stones – though fired objects 
-are often so fast (causing the defender to roll vs. a high DTN) as to often rule out 
-blocking as a viable defence against fired missiles. 
-The applicable Defensive Target Number depends on both the type of shield, and 
-the attack being resisted. See Table 4.4.
-3. ARMOR OVERVIEW
-The function of armor is to reduce or outright prevent injury to somebody being 
-hit in armoured spot. It does so by reducing the Wound Level of any hit to an ar-
-moured location by the Armor Value (AV) of that armor. If the Wound Level is thus 
-reduced to 0 or less, no wound is inflicted.
-But armor in Blade does not equally apply to all locations of the armoured person, 
-but to each location only to the extent that armor is worn in exactly the spot being 
-struck. 
-Somebody wearing a short tunic of sturdy leather and an iron helmet will thus 
-have a different AV to the crown of his head than to his guts or shins. It is therefore 
-essential to record which spot is armoured to what degree, and the Blade character 
-sheet provides space for such notation.
-Armor doesn’t provide the same AV against all types of damage; a thickly padded 
-gambeson will for example provide decent protection against Blunt damage, but 
-much less so against Piercing. 
-Each and every armor has three AVs, one against Piercing, one against Blunt, and 
-one vs. Cleaving. These AVs can be found in Table 4.5.
- Not all armors have an AV against Cleaving damage. Metal armors are virtu-
-ally impossible to actually cut through with any weapon driven by human strength; 
-the most that can be achieved is a dent or a very small rip, a far cry from a serious 
-wound. 
-But that doesn’t mean that the wearer of such armor is immune against Cleav-
-ing weapons – even if a blade does not actually cut such armor, the impact will still 
-transfer Blunt trauma through the armor, possibly breaking bones, or perhaps even 
-killing, all without greatly damaging the armor.
-For this reason, all weapon stats in the Appendix include Blunt DRs, even those 
-that traditionally in RPG games haven’t caused Blunt damage, such as swords. 
-Armor lacking a Cleaving AV uses Blunt AV against Cleaving attacks, while at-
-tacking weapons calculate damage inflicted against such armor not with Cleaving, 
-but with Blunt DR.
-4. ARMOR TYPES
-Gambeson: Pliable textile armor made of a number of layers of quilted cloth and 
-stuffed with cotton, animal hair or other padding. 
-Many other types of armor require the wearing of a gambeson underneath to 
-function properly, which is why the gambeson is also called an arming doublet.
-Leather: Tough, yet pliable, cured hide.
-Leather with Metal: Pliable leather with short metal strips or rings sewn in strate-
-gic places to guard against cuts.
-Hardened Leather: Cured hide boiled and then dried to make it harder, at the cost
+#A small shield is anything clearly larger than a buckler and smaller than a large shield. It is very versatile and of equal use on foot or horseback.
+#Finally, a buckler is a very small, but agile shield, never strapped to the arm, but always carried in a fist grip. It is rarely any larger than 0.3 meters in diameter.
+#All types of shields have variable DTNs against different forms of attack such as melee, missile attacks with thrown weapons such as javelins or hatchets, or against “fired” projectiles like arrows, crossbow bolts, and sling stones – though fired objects are often so fast (causing the defender to roll vs. a high DTN) as to often rule out blocking as a viable defence against fired missiles. 
+#The applicable Defensive Target Number depends on both the type of shield, and the attack being resisted. See Table 4.4.
+
+#3. ARMOR OVERVIEW
+#The function of armor is to reduce or outright prevent injury to somebody being hit in armoured spot. It does so by reducing the Wound Level of any hit to an armoured location by the Armor Value (AV) of that armor. If the Wound Level is thus reduced to 0 or less, no wound is inflicted.
+#But armor in Blade does not equally apply to all locations of the armoured person, but to each location only to the extent that armor is worn in exactly the spot being struck. 
+#Somebody wearing a short tunic of sturdy leather and an iron helmet will thus have a different AV to the crown of his head than to his guts or shins. It is therefore essential to record which spot is armoured to what degree, and the Blade character sheet provides space for such notation.
+#Armor doesn’t provide the same AV against all types of damage; a thickly padded gambeson will for example provide decent protection against Blunt damage, but much less so against Piercing. 
+#Each and every armor has three AVs, one against Piercing, one against Blunt, and one vs. Cleaving. These AVs can be found in Table 4.5.
+#Not all armors have an AV against Cleaving damage. Metal armors are virtually impossible to actually cut through with any weapon driven by human strength; the most that can be achieved is a dent or a very small rip, a far cry from a serious wound. 
+#But that doesn’t mean that the wearer of such armor is immune against Cleaving weapons – even if a blade does not actually cut such armor, the impact will still transfer Blunt trauma through the armor, possibly breaking bones, or perhaps even killing, all without greatly damaging the armor.
+#For this reason, all weapon stats in the Appendix include Blunt DRs, even those that traditionally in RPG games haven’t caused Blunt damage, such as swords. 
+#Armor lacking a Cleaving AV uses Blunt AV against Cleaving attacks, while attacking weapons calculate damage inflicted against such armor not with Cleaving, but with Blunt DR.
+
+#4. ARMOR TYPES
+#Gambeson: Pliable textile armor made of a number of layers of quilted cloth and stuffed with cotton, animal hair or other padding. 
+#Many other types of armor require the wearing of a gambeson underneath to function properly, which is why the gambeson is also called an arming doublet.
+#Leather: Tough, yet pliable, cured hide.
+#Leather with Metal: Pliable leather with short metal strips or rings sewn in strategic places to guard against cuts.
 #Chart page 120
-of most of its pliability. It can be fashioned into segments large enough to serve as 
-helmets and greaves, but not for workable breastplates. 
-Leather/Horn Scale/Lamellar: Armor fashioned from strips of either hardened 
-leather or animal bone. 
-For scale armor, the strips are sewn onto a backing of soft leather or heavy canvas, 
-and then overlapped like roofing tiles. 
-For lamellar armor, each strip has holes fashioned into its edges and are then 
-bound together and overlapped by two neighbouring pieces while yet again overlap-
-ping others. 
-Lamellar is therefore quite rigid, while scale is minimally pliable. Still, neither can 
-be used to protect a joint, and both require the wearing of a gambeson underneath.
-Brigandine: Armor made of palm- to hand-sized metal plates, each sandwiched 
-between two layers of heavy canvas or soft leather and riveted together to stay in 
-place, also known as Coat of Plates. 
-Brigandine is quite rigid and cannot be used to protect joints, and requires the 
-wearing of a gambeson underneath. Brigandine AVs can also be used for Imperial 
-Roman legionaries’ segmented armor.
-Maille: Also known as chainmail, this armor consists of a mesh of small metal 
-rings, each interlinked with neighbouring rings. It is supremely pliable and can 
-therefore be used to protect joints, but it, too, is dependent on a gambeson being 
-worn underneath.
-Brigandine over Maille: A special blend of layering armors, this was common 
-during the transitional period from maille to plate, and consists of maille with ad-
-ditional brigandine worn over it to protect the torso from shoulder to hip.
-Plate: Metal plates shaped to encase the body, including helmets. Two AVs are 
-provided for it. 
-The lesser value is to be used for all plate armor pieces until the arrival of full ar-
-ticulated suits of plate.
-Once such suits become available, the second, higher value is used to reflect the 
-thicker plate now protecting the head and torso, and the lesser value is now reserved 
-for the lighter plate protecting the limbs. 
-Plate armor requires the wearing of a gambeson, which along with an articulated 
-suit of plate may also have insets of maille.
+#Hardened Leather: Cured hide boiled and then dried to make it harder, at the costof most of its pliability. It can be fashioned into segments large enough to serve as helmets and greaves, but not for workable breastplates. 
+#Leather/Horn Scale/Lamellar: Armor fashioned from strips of either hardened leather or animal bone. 
+#For scale armor, the strips are sewn onto a backing of soft leather or heavy canvas, and then overlapped like roofing tiles. 
+#For lamellar armor, each strip has holes fashioned into its edges and are then bound together and overlapped by two neighbouring pieces while yet again overlapping others. 
+#Lamellar is therefore quite rigid, while scale is minimally pliable. Still, neither can be used to protect a joint, and both require the wearing of a gambeson underneath.
+#Brigandine: Armor made of palm- to hand-sized metal plates, each sandwiched between two layers of heavy canvas or soft leather and riveted together to stay in place, also known as Coat of Plates. 
+#Brigandine is quite rigid and cannot be used to protect joints, and requires the wearing of a gambeson underneath. Brigandine AVs can also be used for Imperial Roman legionaries’ segmented armor.
+#Maille: Also known as chainmail, this armor consists of a mesh of small metal rings, each interlinked with neighbouring rings. It is supremely pliable and can therefore be used to protect joints, but it, too, is dependent on a gambeson being worn underneath.
+#Brigandine over Maille: A special blend of layering armors, this was common during the transitional period from maille to plate, and consists of maille with additional brigandine worn over it to protect the torso from shoulder to hip.
+#Plate: Metal plates shaped to encase the body, including helmets. Two AVs are provided for it. 
+#The lesser value is to be used for all plate armor pieces until the arrival of full articulated suits of plate.
+#Once such suits become available, the second, higher value is used to reflect the thicker plate now protecting the head and torso, and the lesser value is now reserved for the lighter plate protecting the limbs. 
+#Plate armor requires the wearing of a gambeson, which along with an articulated suit of plate may also have insets of maille.
