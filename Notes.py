@@ -73,7 +73,7 @@
 
 #Proficiencies
     #Brawling - Brawling consists first and foremost of punching and kicking, derived by means of the Bash Maneuver, but also of grappling and plenty of dirty tricks.
-    #Cut and Thrust - This proficiency refers to swords that are usually not weilded in conjuction with a larger shield, but rather in quick fencing style.
+    #Cut and Thrust - This proficiency refers to swords that are usually not wielded in conjuction with a larger shield, but rather in quick fencing style.
     #Dagger - Found in every place in the world, daggers and knives are used as both tools and instruments of death.
     #Greatsword - Frequently wielded with a wide, half-swording grip. Greatswords are fearsome weapons with great range, but easily overcome by any fighter agile enough to get close.
     #Longsword - For those warriors that prefer not to use shields, longswords are very polular. They are a fierce weapon, capable of heavy damage when either cleaving or thrusting, as well as complex maneuvering and countering.
@@ -81,7 +81,7 @@
     #Missile Weapon Proficiencies
     #Pole-Arms - A wide range of weapons from the Spear to the Halberd.
     #Spear and Shield - Covers the use of one-handed spears and shields.
-    #Sword and Shield - This Proficiency involves any one-handed sword and a shield. Although this proficiency could be used without a shield and no penalty.
+    #Sword and Shield - This Proficiency involves any one-handed sword and a shield. Although this proficiency could be used without a shield at no penalty.
     #Wrestling - As with Brawling, Wrestling is always an option for the unarmed character.
 
 #Maneuvers
@@ -638,6 +638,28 @@
 #Activation Costs in parentheses are those not normally taught with a certain Proficiency, but that might come up for use in unusual situation.
 #* Mass Weapon & Shield: Lower of two given Activation Costs is for use without shield.
 #** Sword & Shield: Lower of two given Activation Costs is for use without shield.
+
+#Armor zones
+    #Head (Upper)
+    #Head (lower including face)
+    #Neck
+    #Collar
+    #Shoulder
+    #Upper Arm
+    #Elbow
+    #Forearm
+    #Hand
+    #Chest
+    #Ribcage
+    #Upper Abdomen
+    #Lower Abdomen
+    #Groin
+    #Hip
+    #Thigh
+    #Inner Thigh
+    #Knee and nearby areas
+    #Shin and Lower Legs
+    #Foot
 
 #1. LIMELIGHT AND THE COMBAT ROUND
 #The basic temporal unit any Combat Scene in Blade is the Combat Round. During the Combat Round, every combatant has dice to spend on action equal to his Melee Pool. 
