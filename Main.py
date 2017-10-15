@@ -1,28 +1,5 @@
 import random
-#Define the Player Class.
-class CurrentCharacter:
-    def __init__(self, name, brawn, daring, tenacity, heart, sagacity, cunning, reflex, aim, knockdown, knockout, brawling, cut, dagger, greatsword, longsword, mass, pole, spear, sword, wrestling):
-        self.name = name
-        self.brawn = brawn
-        self.daring = daring
-        self.tenacity = tenacity
-        self.heart = heart
-        self.sagacity = sagacity
-        self.cunning = cunning
-        self.reflex = reflex
-        self.aim = aim
-        self.knockdown = knockdown
-        self.knockout = knockout
-        self.brawling = brawling
-        self.cut = cut
-        self.dagger = dagger
-        self.greatsword = greatsword
-        self.longsword = longsword
-        self.mass = mass
-        self.pole = pole
-        self.spear = spear
-        self.sword = sword
-        self.wrestling = wrestling
+
 
 #Create the Melee Weapons Table
 Hand = 1
@@ -32,167 +9,16 @@ Long = 4
 VeryLong = 5
 ExtremelyLong = 6
 
-MeleeWeapons = {
-                1 : { "name" : "Short Sword" ,
-                      "description" : "A sword with a short, two-edged blade." ,
-                      "reach" : Short,
-                      "sATN" : 6,
-                      "sDR" : 0,
-                      "tATN" : 6,
-                      "tDR" : 1,
-                      "DTN" : 7,
-                      "bDR" : -2,
-                      "Proficiency" : [Cut, Sword]} ,
+HitZones = {
+                1 : { "name" : "Lower Legs" }
+             }
 
-                2 : { "name" : "Arming Sword" ,
-                      "description" : "The basic, run-of-the-mill one-handed sword." ,
-                      "reach" : Medium,
-                      "sATN" : 7,
-                      "sDR" : 1,
-                      "tATN" : 7,
-                      "tDR" : 1,
-                      "DTN" : 7,
-                      "bDR" : -1} ,
-
-                3 : { "name" : "Hand-and-a-Half, Two-Handed" ,
-                      "description" : "An arming sword with a slightly longer blade and hilt long enough to accomodate both hands." ,
-                      "reach" : Medium,
-                      "sATN" : 7,
-                      "sDR" : 2,
-                      "tATN" : 7,
-                      "tDR" : 1,
-                      "DTN" : 6,
-                      "bDR" : 0} ,
-                
-                3.5 : { "name" : "Hand-and-a-Half, One-Handed" ,
-                        "description" : "An arming sword with a slightly longer blade and hilt long enough to accomodate both hands." ,
-                        "reach" : Long,
-                        "sATN" : 8,
-                        "sDR" : 2,
-                        "tATN" : 8,
-                        "tDR" : 1,
-                        "DTN" : 8,
-                        "bDR" : 0} ,
-
-                4 : { "name" : "Greatsword" ,
-                      "description" : "A hand-and-a-half sword with a longer blade, intended soley for use with both hands." ,
-                      "reach" : VeryLong,
-                      "sATN" : 8,
-                      "sDR" : 3,
-                      "tATN" : 8,
-                      "tDR" : 1,
-                      "DTN" : 8,
-                      "bDR" : 1} ,
-
-                5 : { "name" : "Falchion, One-Handed" ,
-                      "description" : "An arming sword with a slightly longer hilt and a heavy, broad blade, it's back straight and blunt and its one edge curved." ,
-                      "reach" : Medium,
-                      "sATN" : 8,
-                      "sDR" : 2,
-                      "tATN" : 10,
-                      "tDR" : 0,
-                      "DTN" : 9,
-                      "bDR" : -1,
-                      "armorsDR" : 1} ,
-
-                5.5 : { "name" : "Falchion, Two-Handed" ,
-                        "description" : "An arming sword with a slightly longer hilt and a heavy, broad blade, it's back straight and blunt and its one edge curved." ,
-                        "reach" : Short,
-                        "sATN" : 7,
-                        "sDR" : 2,
-                        "tATN" : 9,
-                        "tDR" : 0,
-                        "DTN" : 7,
-                        "bDR" : -1,
-                        "armorsDR" : 1} ,
-
-                6 : { "name" : "Sidesword" ,
-                      "description" : "An arming sword with a slender blade of stiff diamond cross-section tapering to an acute point." ,
-                      "reach" : Medium,
-                      "sATN" : 6,
-                      "sDR" : -1,
-                      "tATN" : 7,
-                      "tDR" : 1,
-                      "DTN" : 6,
-                      "bDR" : -2,
-                      "AC" : -1,
-                      "metalsDR" : -1,
-                      "metaltDR" : -1,
+MeleeWeapons = {           
+                6 : { "name" : "Sidesword",
                       "notes" : "DTN is increased by +1 against two-handed and heavy one-handed swords, by +2 against light pole-arms and one-handed mass weapons, and by +3 against heavy pole-arms and two-handed mass weapons."} ,
 
                 7 : { "name" : "Rapier" ,
-                      "description" : "A sidesword with a somewhat longer but even more slender blade, tapering for much of its length to a very acute point." ,
-                      "reach" : Long,
-                      "sATN" : 6,
-                      "sDR" : -3,
-                      "tATN" : 8,
-                      "tDR" : 1,
-                      "DTN" : 6,
-                      "bDR" : -3,
-                      "metalsDR" : -2,
-                      "metaltDR" : -2,
-                      "leathersDR" : -1,
-                      "leathertDR" : -1,
                       "notes" : "DTN is increased by +1 against daggers and sideswords, by +2 against one-handed swords, by +3 against two-handed and heavy one-handed swords, by +4 against light pole-arms and one-handed mass weapons, and by +5 against heavy pole-arms and two-handed mass weapons. The point will break on any connecting swing against armor better than gambeson or pliable leather unreinforced by metal, reducing Reach to Medium and Thrust DR to 0."} ,
-
-                8 : { "name" : "Saber" ,
-                      "description" : "A one edged arming sword with a slight to moderate back-curve." ,
-                      "reach" : Medium,
-                      "sATN" : 7,
-                      "sDR" : 1,
-                      "tATN" : 8,
-                      "tDR" : 1,
-                      "DTN" : 7,
-                      "bDR" : -1,
-                      "swingAC" : -1,
-                      "armorsDR" : -1} ,
-
-                9 : { "name" : "Scimitar" ,
-                      "description" : "A saber with a more pronounced back-curve." ,
-                      "reach" : Medium,
-                      "sATN" : 7,
-                      "sDR" : 1,
-                      "tATN" : 9,
-                      "tDR" : 1,
-                      "DTN" : 7,
-                      "bDR" : -1,
-                      "swingAC" : -1,
-                      "armorsDR" : -1} ,
-
-                10 : { "name" : "Dao" ,
-                       "description" : "A far Eastern type of saber with a slight flare towards the - rather blunt - point of the blade." ,
-                       "reach" : Medium,
-                       "sATN" : 8,
-                       "sDR" : 2,
-                       "tATN" : 9,
-                       "tDR" : 0,
-                       "DTN" : 7,
-                       "bDR" : 0,
-                       "DefAC" : 1} ,
-
-                11 : { "name" : "Katana, Two-Handed" ,
-                       "description" : "A far Eastern hand-and-a-half sword with a long hilt and a one-edged, back-curved blade." ,
-                       "reach" : Medium,
-                       "sATN" : 7,
-                       "sDR" : 2,
-                       "tATN" : 8,
-                       "tDR" : 1,
-                       "DTN" : 6,
-                       "bDR" : -1,
-                       "swingAC" : -1,
-                       "armorsDR" : -1} ,
-
-                11.5 : { "name" : "Katana, One-Handed" ,
-                         "description" : "A far Eastern hand-and-a-half sword with a long hilt and a one-edged, back-curved blade." ,
-                         "reach" : Long,
-                         "sATN" : 8,
-                         "sDR" : 2,
-                         "tATN" : 9,
-                         "tDR" : 1,
-                         "DTN" : 8,
-                         "bDR" : -1,
-                         "swingAC" : -1,
-                         "armorsDR" : -1} ,
 
                 12 : { "name" : "Wakizashi" ,
                        "description" : "A short sword with a blade of the Katana type." ,
@@ -534,7 +360,91 @@ MeleeWeapons = {
                        "bDR" : 0,
                        "tOffAC" : 1,
                        "armortDR" : -1} ,
-               }
+                 }
+
+Armors = {
+    
+                1 : { "name" : "Gambeson" ,
+                      "description" : "Pliable textile armor made of a number of layers of quilted cloth and stuffed with cotton, animal hair, or other padding." ,
+                      "pAV" : 1,
+                      "bAV" : 2,
+                      "cAV" : 2} ,
+
+                2 : { "name" : "Leather" ,
+                      "description" : "Tough, yet pliable, cured hide." ,
+                      "pAV" : 2,
+                      "bAV" : 1,
+                      "cAV" : 2} ,
+
+                3 : { "name" : "Leather with Metal" ,
+                      "description" : "Pliable leather with short metal strips or rings sewn in strategic places to guard against cuts." ,
+                      "pAV" : 2,
+                      "bAV" : 1,
+                      "cAV" : 3} ,
+
+                4 : { "name" : "Hardened Leather" ,
+                      "description" : "Cured hide boiled and then dried to make it harder, at the cost of pliability. It can be fashioned into segments large enough to serve as helmets and greaves, but not for workable breastplates." ,
+                      "pAV" : 3,
+                      "bAV" : 2,
+                      "cAV" : 2} ,
+
+                5 : { "name" : "Leather Lamellar" ,
+                      "description" : "Strips of leather with holes fashioned into its edges and that are bound together and overlapped by neighboring pieces. Leather Lamellar is quite rigid and cannot be used to protect a joint. Requires wearing a gambeson underneath." ,
+                      "pAV" : 3,
+                      "bAV" : 3,
+                      "cAV" : 3} ,
+
+                6 : { "name" : "Metal Lamellar" ,
+                      "description" : "Strips of metal with holes fashioned into its edges and that are bound together and overlapped by neighboring pieces. Leather Lamellar is quite rigid and cannot be used to protect a joint. Requires a gambeson to be worn underneath." ,
+                      "pAV" : 4,
+                      "bAV" : 4} ,
+
+                7 : { "name" : "Brigandine" ,
+                      "description" : "Armor made of palm- to hand-sized metal plates, each sandwiched between two layers of heavy canvas or soft leather and riveted together. Brigandine is quite rigit and cannot be used to protect joints, and requires a gambeson to be worn underneath." ,
+                      "pAV" : 4,
+                      "bAV" : 4} ,
+                
+                8 : { "name" : "Mail" ,
+                      "description" : "This armor consists of a mesh of small metal rings, each interlinked with neighboring rings. It is supremely pliable and can therefore be used to protect joints, but it too requires a gambeson to be worn underneath" ,
+                      "pAV" : 4,
+                      "bAV" : 3} ,
+
+                9 : { "name" : "Brigandine over Mail" ,
+                      "description" : "" ,
+                      "pAV" : 5,
+                      "bAV" : 3} ,
+
+                10 : { "name" : "Plate Pieces" ,
+                       "description" : "" ,
+                       "pAV" : 6,
+                       "bAV" : 4} ,
+
+                11 : { "name" : "Articulated Plate" ,
+                       "description" : "" ,
+                       "pAV" : 7,
+                       "bAV" : 5}
+                
+           }
+
+Shields = {
+                1 : { "name" : "Buckler" ,
+                      "description" : "" ,
+                      "mDTN" : 7,
+                      "tDTN" : 8,
+                      "pDTN" : 11} ,
+
+                2 : { "name" : "Small Shield" ,
+                      "description" : "" ,
+                      "mDTN" : 6,
+                      "tDTN" : 7,
+                      "pDTN" : 9} ,
+
+                3 : { "name" : "Large Shield" ,
+                      "description" : "" ,
+                      "mDTN" : 5,
+                      "tDTN" : 6,
+                      "pDTN" : 7}
+            }
 
 #Decide what type of game you will be playing. For now there is just Gladiator
 GameType = input("What type of game do you want to play? For now there is only Gladiator.\n>")
@@ -544,398 +454,552 @@ if GameType == "Gladiator":
                 1 : { "name" : "the Preparation Room"},
 
                 2 : { "name" : "the Arena"}
-            }
+              }
     #Set the player in the first room.
     currentRoom = 1
     print("You find yourself in the preparation room beneath the Arena. You hear the roar of the crowd above you.")
     print("o==[=========> <=========]==o")
 
-    #Create an Inventory, which is initailly empty.
-    Weapon = []
-    
+    #Define Humanoids, the framework for both the player and most enemies.
+    class Humanoid:
+        def __init__(self, name, brawn, daring, tenacity, heart, sagacity, cunning, reflex, aim, knockdown, knockout, proficiency, weapon, shield, armor, zones):
+            self.name = name
+            self.brawn = brawn
+            self.daring = daring
+            self.tenacity = tenacity
+            self.heart = heart
+            self.sagacity = sagacity
+            self.cunning = cunning
+            self.reflex = reflex
+            self.aim = aim
+            self.knockdown = knockdown
+            self.knockout = knockout
+            self.proficiency = proficiency
+            self.weapon = weapon
+            self.shield = shield
+            self.armor = armor
+            self.zone1 = zones
 
-    #Have player create their character.      
-    #Set number of Attribute Points to start the game with.
-    StartingPoints = 29
-    print("You have 29 Attribute Points to disperse among the 6 Main Attributes, Brawn, Daring, Tenacity, Heart, Sagacity, and Cunning. ")
-    print("o==[=========> <=========]==o")
-    #Loop until chosen Attributes are <= 29
-    while True:
-        try:
-            #Have player set their character's Brawn, loop until get a number from 1 - 8.
-            while True:
-                try:
-                    Brawn = int(input("How many points will you assign to Brawn? You can assign between 1 and 8 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Brawn < 1 or Brawn > 8:
-                    print("You can assign between 1 and 8 Points.")
-                    continue
-                elif StartingPoints - Brawn < 5:
-                    print("You have " + str(StartingPoints) + " Points left and 5 more Attributes!")
-                    continue
-                else:
-                    break
-            StartingPoints = StartingPoints - Brawn
-            print("You have " + str(StartingPoints) + " Points left.")
-            print("o==[=========> <=========]==o")
-            
-            #Have player set their character's Daring, loop until get a number from 1 - 8.
-            while True:
-                try:
-                    Daring = int(input("How many points will you assign to Daring? You can assign between 1 and 8 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Daring < 1 or Daring > 8:
-                    print("You can assign between 1 and 8 Points.")
-                    continue
-                elif StartingPoints - Daring < 4:
-                    print("You have " + str(StartingPoints) + " Points left and 4 more Attributes!")
-                    continue
-                else:
-                    break
-            StartingPoints = StartingPoints - Daring
-            print("You have " + str(StartingPoints) + " Points left.")
-            print("o==[=========> <=========]==o")
-            
-            #Have player set their character's Tenacity, loop until get a number from 1 - 8.
-            while True:
-                try:
-                    Tenacity = int(input("How many points will you assign to Tenacity? You can assign between 1 and 8 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Tenacity < 1 or Tenacity > 8:
-                    print("You can assign between 1 and 8 Points.")
-                    continue
-                elif StartingPoints - Tenacity < 3:
-                    print("You have " + str(StartingPoints) + " Points left and 3 more Attributes!")
-                    continue
-                else:
-                    break
-            StartingPoints = StartingPoints - Tenacity
-            print("You have " + str(StartingPoints) + " Points left.")
-            print("o==[=========> <=========]==o")
-            
-            #Have player set their character's Heart, loop until get a number from 1 - 8.
-            while True:
-                try:
-                    Heart = int(input("How many points will you assign to Heart? You can assign between 1 and 8 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Heart < 1 or Heart > 8:
-                    print("You can assign between 1 and 8 Points.")
-                    continue
-                elif StartingPoints - Heart < 2:
-                    print("You have " + str(StartingPoints) + " Points left and 2 more Attributes!")
-                    continue
-                else:
-                    break
-            StartingPoints = StartingPoints - Heart
-            print("You have " + str(StartingPoints) + " Points left.")
-            print("o==[=========> <=========]==o")
-            
-            #Have player set their character's Sagacity, loop until get a number from 1 - 8.
-            while True:
-                try:
-                    Sagacity = int(input("How many points will you assign to Sagacity? You can assign between 1 and 8 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Sagacity < 1 or Sagacity > 8:
-                    print("You can assign between 1 and 8 Points.")
-                    continue
-                elif StartingPoints - Sagacity < 1:
-                    print("You only have " + str(StartingPoints) + " Points left and 1 more Attribute!")
-                    continue
-                else:
-                    break
-            StartingPoints = StartingPoints - Sagacity
-            print("You have " + str(StartingPoints) + " Points left.")
-            print("o==[=========> <=========]==o")
-            
-            #Have player set their character's Cunning, loop until get a number from 1 - 8.
-            while True:
-                try:
-                    Cunning = int(input("How many points will you assign to Cunning? You can assign between 1 and 8 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Cunning < 1 or Cunning > 8:
-                    print("You can assign between 1 and 8 Points.")
-                    continue
-                elif StartingPoints - Cunning < 0:
-                    print("You only have " + str(StartingPoints) + " Points left!")
-                    continue
-                else:
-                    break
-            StartingPoints = StartingPoints - Cunning
+    #Define and create a dictionary of Characters.
+#    Character = {
+#                0 : { "name" : "Gladiator",
+#                      "brawn" : ,
+#                      "daring" : ,
+#                      "tenacity" : ,
+#                      "heart" : ,
+#                      "sagacity" : ,
+#                      "cunning" : ,
+#                      "proficiency" : ,
+#                      "weapon" : MeleeWeapons[15],
+#                      "shield" : Shields[1]} ,
+#                }
 
-        except ValueError:
-            print("Sorry, I didn't understand that!")
-            continue
-        if StartingPoints < 0:
-            print("You only have 29 points!")
-            continue
-        else:
-            break
-        
-    #Set Combination Attributes based on choices for Basic Attributes.
-    Reflex = round((Cunning + Daring)/2, 0)
-    Aim = round((Sagacity + Cunning)/2, 0)
-    Knockdown = round((Brawn + Daring)/2, 0)
-    Knockout = round((Brawn + Tenacity)/2, 0)
+    #Define and create a dictionary of Enemies.
+    Enemies = {
+                0 : { "name" : "Slave Fighter 1",
+                      "brawn" : 5,
+                      "daring" : 4,
+                      "tenacity" : 4,
+                      "heart" : 3,
+                      "sagacity" : 4,
+                      "cunning" : 4,
+                      "proficiency" : 5,
+                      "weapon" : MeleeWeapons[14],
+                      "shield" : Shields[2]} ,
 
-    #Set Proficiencies
-    StartingProficiencies = 11
-    print("You have 11 Proficiency Points to disperse among the main Proficiencies.")
-    print("o==[=========> <=========]==o")
-    #Loop until chosen Proficiencies are <= 11
-    while True:
-        try:
-            #Have player set their character's Brawling, loop until get a number from 0 - 12.
-            while True:
-                try:
-                    print("Brawling - This proficiency consists first and foremost of punching and kicking, derived by means of the Bash Maneuver, but also of grappling and plenty of dirty tricks.")
-                    Brawling = int(input("How many points will you assign to Brawling? You can assign between 0 and 12 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Brawling < 0 or Brawling > 12:
-                    print("You can assign between 0 and 12 Points.")
-                    continue
-                elif StartingProficiencies - Brawling < 0:
-                    print("You only have 11 Points!")
-                    continue
-                else:
-                    break
-            StartingProficiencies = StartingProficiencies - Brawling
-            print("You have " + str(StartingProficiencies) + " Points left.")
-            print("o==[=========> <=========]==o")
-            
-            #Have player set their character's Cut & Thrust, loop until get a number from 0 - 12.
-            while True:
-                try:
-                    print("Cut and Thrust - This proficiency refers to swords that are usually not wielded in conjuction with a larger shield, but rather in quick fencing style.")
-                    Cut = int(input("How many points will you assign to Cut & Thrust? You can assign between 0 and 12 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Cut < 0 or Cut > 12:
-                    print("You can assign between 0 and 12 Points.")
-                    continue
-                elif StartingProficiencies - Cut < 0:
-                    print("You only have 11 Points!")
-                    continue
-                else:
-                    break
-            StartingProficiencies = StartingProficiencies - Cut
-            print("You have " + str(StartingProficiencies) + " Points left.")
-            print("o==[=========> <=========]==o")
-            
-            #Have player set their character's Dagger, loop until get a number from 0 - 12.
-            while True:
-                try:
-                    print("Dagger - Found in every place in the world, daggers and knives are used as both tools and instruments of death.")
-                    Dagger = int(input("How many points will you assign to Dagger? You can assign between 0 and 12 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Dagger < 0 or Dagger > 12:
-                    print("You can assign between 0 and 12 Points.")
-                    continue
-                elif StartingProficiencies - Dagger < 0:
-                    print("You only have 11 Points!")
-                    continue
-                else:
-                    break
-            StartingProficiencies = StartingProficiencies - Dagger
-            print("You have " + str(StartingProficiencies) + " Points left.")
-            print("o==[=========> <=========]==o")
-            
-            #Have player set their character's Greatsword, loop until get a number from 0 - 12.
-            while True:
-                try:
-                    print("Greatsword - Frequently wielded with a wide, half-swording grip. Greatswords are fearsome weapons with great range, but easily overcome by any fighter agile enough to get close.")
-                    Greatsword = int(input("How many points will you assign to Greatsword? You can assign between 0 and 12 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Greatsword < 0 or Greatsword > 12:
-                    print("You can assign between 0 and 12 Points.")
-                    continue
-                elif StartingProficiencies - Greatsword < 0:
-                    print("You only have 11 Points!")
-                    continue
-                else:
-                    break
-            StartingProficiencies = StartingProficiencies - Greatsword
-            print("You have " + str(StartingProficiencies) + " Points left.")
-            print("o==[=========> <=========]==o")
-            
-            #Have player set their character's Longsword, loop until get a number from 0 - 12.
-            while True:
-                try:
-                    print("Longsword - For those warriors that prefer not to use shields, longswords are very polular. They are a fierce weapon, capable of heavy damage when either cleaving or thrusting, as well as complex maneuvering and countering.")
-                    Longsword = int(input("How many points will you assign to Longsword? You can assign between 0 and 12 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Longsword < 0 or Longsword > 12:
-                    print("You can assign between 0 and 12 Points.")
-                    continue
-                elif StartingProficiencies - Longsword < 0:
-                    print("You only have 11 Points!")
-                    continue
-                else:
-                    break
-            StartingProficiencies = StartingProficiencies - Longsword
-            print("You have " + str(StartingProficiencies) + " Points left.")
-            print("o==[=========> <=========]==o")
-            
-            #Have player set their character's Mass Weapon & Shield, loop until get a number from 0 - 12.
-            while True:
-                try:
-                    print("Mass Weapon & Shield - Mass weapons include any single-handed (and occasionally two-handed) weapon that is particularly heavy on the end. These weapon's balance makes them slow on the parry and commends the use of constant evasion or - more commonly - shields.")
-                    Mass = int(input("How many points will you assign to Mass Weapon & Shield? You can assign between 0 and 12 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Mass < 0 or Mass > 12:
-                    print("You can assign between 0 and 12 Points.")
-                    continue
-                elif StartingProficiencies - Mass < 0:
-                    print("You only have 11 Points!")
-                    continue
-                else:
-                    break
-            StartingProficiencies = StartingProficiencies - Mass
-            print("You have " + str(StartingProficiencies) + " Points left.")
-            print("o==[=========> <=========]==o")
+                1 : { "name" : "Slave Fighter 2",
+                      "brawn" : 5,
+                      "daring" : 4,
+                      "tenacity" : 4,
+                      "heart" : 3,
+                      "sagacity" : 4,
+                      "cunning" : 4,
+                      "proficiency" : 4,
+                      "weapon" : MeleeWeapons[14],
+                      "shield" : 2} ,
 
-            #Have player set their character's Pole-arm, loop until get a number from 0 - 12.
-            while True:
-                try:
-                    print("Pole-Arms - A wide range of weapons from the Spear to the Halberd.")
-                    Pole = int(input("How many points will you assign to Pole-arms? You can assign between 0 and 12 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Pole < 0 or Pole > 12:
-                    print("You can assign between 0 and 12 Points.")
-                    continue
-                elif StartingProficiencies - Pole < 0:
-                    print("You only have 11 Points!")
-                    continue
-                else:
-                    break
-            StartingProficiencies = StartingProficiencies - Pole
-            print("You have " + str(StartingProficiencies) + " Points left.")
-            print("o==[=========> <=========]==o")
+                2 : { "name" : "Slave Fighter 3",
+                      "brawn" : 5,
+                      "daring" : 4,
+                      "tenacity" : 4,
+                      "heart" : 4,
+                      "sagacity" : 3,
+                      "cunning" : 4,
+                      "proficiency" : 5,
+                      "weapon" : MeleeWeapons[14],
+                      "shield" : Shields[2]} ,
 
-                    #Have player set their character's Spear & Shield, loop until get a number from 0 - 12.
-            while True:
-                try:
-                    print("Spear and Shield - Covers the use of one-handed spears and shields.")
-                    Spear = int(input("How many points will you assign to Spear & Shield? You can assign between 0 and 12 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Spear < 0 or Spear > 12:
-                    print("You can assign between 0 and 12 Points.")
-                    continue
-                elif StartingProficiencies - Spear < 0:
-                    print("You only have 11 Points!")
-                    continue
-                else:
-                    break
-            StartingProficiencies = StartingProficiencies - Spear
-            print("You have " + str(StartingProficiencies) + " Points left.")
-            print("o==[=========> <=========]==o")
+                3 : { "name" : "Slave Fighter 4",
+                      "brawn" : 5,
+                      "daring" : 4,
+                      "tenacity" : 4,
+                      "heart" : 4,
+                      "sagacity" : 3,
+                      "cunning" : 4,
+                      "proficiency" : 4,
+                      "weapon" : MeleeWeapons[14],
+                      "shield" : Shields[2]} ,
 
-                    #Have player set their character's Sword & Shield, loop until get a number from 0 - 12.
-            while True:
-                try:
-                    print("Sword and Shield - This Proficiency involves any one-handed sword and a shield. Although this proficiency could be used without a shield at no penalty.")
-                    Sword = int(input("How many points will you assign to Sword & Shield? You can assign between 0 and 12 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Sword < 0 or Sword > 12:
-                    print("You can assign between 0 and 12 Points.")
-                    continue
-                elif StartingProficiencies - Sword < 0:
-                    print("You only have 11 Points!")
-                    continue
-                else:
-                    break
-            StartingProficiencies = StartingProficiencies - Sword
-            print("You have " + str(StartingProficiencies) + " Points left.")
-            print("o==[=========> <=========]==o")
+                4 : { "name" : "Soldier, Rank-and-file 5",
+                      "brawn" : 4,
+                      "daring" : 5,
+                      "tenacity" : 4,
+                      "heart" : 3,
+                      "sagacity" : 4,
+                      "cunning" : 4,
+                      "proficiency" : 5,
+                      "weapon" : MeleeWeapons[14],
+                      "shield" : Shields[2]} ,
 
-                    #Have player set their character's Wrestling, loop until get a number from 0 - 12.
-            while True:
-                try:
-                    print("Wrestling - As with Brawling, Wrestling is always an option for the unarmed character.")
-                    Wrestling = int(input("How many points will you assign to Wrestling? You can assign between 0 and 12 Points.\n>"))
-                except ValueError:
-                    print("Sorry, I didn't understand that!")
-                    continue
-                if Wrestling < 0 or Wrestling > 12:
-                    print("You can assign between 0 and 12 Points.")
-                    continue
-                elif StartingProficiencies - Wrestling < 0:
-                    print("You only have 11 Points!")
-                    continue
-                else:
-                    break
-            StartingProficiencies = StartingProficiencies - Wrestling
-            
-        except ValueError:
-            print("Sorry, I didn't understand that!")
-            continue
-        if StartingProficiencies < 0:
-            print("You only have 11 points!")
-            continue
-        else:
-            break
+                5 : { "name" : "Soldier, Rank-and-file 6",
+                      "brawn" : 4,
+                      "daring" : 5,
+                      "tenacity" : 4,
+                      "heart" : 3,
+                      "sagacity" : 4,
+                      "cunning" : 4,
+                      "proficiency" : 4,
+                      "weapon" : MeleeWeapons[14],
+                      "shield" : Shields[2]} ,
 
-    #Define the Player, based on Basic Attributes, Combined Attributes, Proficiencies, and Pools.
-    Player = CurrentCharacter("Stuart", Brawn, Daring, Tenacity, Heart, Sagacity, Cunning, Reflex, Aim, Knockdown, Knockout, Brawling, Cut, Dagger, Greatsword, Longsword, Mass, Pole, Spear, Sword, Wrestling)
+                6 : { "name" : "Soldier, Rank-and-file 7",
+                      "brawn" : 4,
+                      "daring" : 5,
+                      "tenacity" : 4,
+                      "heart" : 4,
+                      "sagacity" : 3,
+                      "cunning" : 4,
+                      "proficiency" : 5,
+                      "weapon" : MeleeWeapons[14],
+                      "shield" : Shields[2]} ,
 
-    #Print Character Sheet.
-    print("o==[=========> <=========]==o")
-    print("Primary Attributes")
-    print("o==[=========> <=========]==o")
-    print("Brawn = " + str(Player.brawn))
-    print("Daring = " + str(Player.daring))
-    print("Tenacity = " + str(Player.tenacity))
-    print("Heart = " + str(Player.heart))
-    print("Sagacity = " + str(Player.sagacity))
-    print("Cunning = " + str(Player.cunning))
-    print("o==[=========> <=========]==o")
-    print("Combined Attributes")
-    print("o==[=========> <=========]==o")
-    print("Reflex = " + str(int(Player.reflex)))
-    print("Aim = " + str(int(Player.aim)))
-    print("Knockdown = " + str(int(Player.knockdown)))
-    print("Knockout = " + str(int(Player.knockout)))
-    print("o==[=========> <=========]==o")
-    print("Weapon Proficiencies")
-    print("o==[=========> <=========]==o")
-    print("Brawling = " + str(int(Player.brawling)))
-    print("Cut & Thrust = " + str(int(Player.cut)))
-    print("Dagger = " + str(int(Player.dagger)))
-    print("Greatsword = " + str(int(Player.greatsword)))
-    print("Longsword = " + str(int(Player.longsword)))
-    print("Mass Weapon & Shield = " + str(int(Player.mass)))
-    print("Pole-arm = " + str(int(Player.pole)))
-    print("Spear & Shield = " + str(int(Player.spear)))
-    print("Sword & Shield = " + str(int(Player.sword)))
-    print("Wrestling = " + str(int(Player.wrestling)))
+                7 : { "name" : "Soldier, Rank-and-file 8",
+                      "brawn" : 4,
+                      "daring" : 5,
+                      "tenacity" : 4,
+                      "heart" : 4,
+                      "sagacity" : 3,
+                      "cunning" : 4,
+                      "proficiency" : 4,
+                      "weapon" : MeleeWeapons[14],
+                      "shield" : Shields[2]} ,
+
+                8 : { "name" : "Soldier, Rank-and-file 9",
+                      "brawn" : 5,
+                      "daring" : 4,
+                      "tenacity" : 4,
+                      "heart" : 3,
+                      "sagacity" : 4,
+                      "cunning" : 4,
+                      "proficiency" : 5,
+                      "weapon" : MeleeWeapons[15],
+                      "shield" : Shields[2]} ,
+
+                9 : { "name" : "Soldier, Rank-and-file 10",
+                      "brawn" : 5,
+                      "daring" : 4,
+                      "tenacity" : 4,
+                      "heart" : 3,
+                      "sagacity" : 4,
+                      "cunning" : 4,
+                      "proficiency" : 4,
+                      "weapon" : MeleeWeapons[15],
+                      "shield" : Shields[2]} ,
+
+                10 : { "name" : "Soldier, Rank-and-file 11",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[15],
+                       "shield" : Shields[2]} ,
+
+                11 : { "name" : "Soldier, Rank-and-file 12",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[15],
+                       "shield" : Shields[2]} ,
+
+                12 : { "name" : "Soldier, Rank-and-file 13",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[15],
+                       "shield" : Shields[2]} ,
+
+                13 : { "name" : "Soldier, Rank-and-file 14",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[15],
+                       "shield" : Shields[2]} ,
+
+                14 : { "name" : "Soldier, Rank-and-file 15",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[15],
+                       "shield" : Shields[2]} ,
+
+                15 : { "name" : "Soldier, Rank-and-file 16",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[15],
+                       "shield" : Shields[2]} ,
+
+                16 : { "name" : "Soldier, Rank-and-file 17",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[21],
+                       "shield" : Shields[2]} ,
+
+                17 : { "name" : "Soldier, Rank-and-file 18",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[21],
+                       "shield" : Shields[2]} ,
+
+                18 : { "name" : "Soldier, Rank-and-file 19",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[21],
+                       "shield" : Shields[2]} ,
+
+                19 : { "name" : "Soldier, Rank-and-file 20",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[21],
+                       "shield" : Shields[2]} ,
+
+                20 : { "name" : "Soldier, Rank-and-file 21",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[21],
+                       "shield" : Shields[2]} ,
+
+                21 : { "name" : "Soldier, Rank-and-file 22",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[21],
+                       "shield" : Shields[2]} ,
+
+                22 : { "name" : "Soldier, Rank-and-file 23",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[21],
+                       "shield" : Shields[2]} ,
+
+                23 : { "name" : "Soldier, Rank-and-file 24",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[21],
+                       "shield" : Shields[2]} ,
+
+                24 : { "name" : "Soldier, Rank-and-file 25",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[14]} ,
+
+                25 : { "name" : "Soldier, Rank-and-file 26",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[14]} ,
+
+                26 : { "name" : "Soldier, Rank-and-file 27",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[14]} ,
+
+                27 : { "name" : "Soldier, Rank-and-file 28",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[14]} ,
+
+                28 : { "name" : "Soldier, Rank-and-file 29",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[14]} ,
+
+                29 : { "name" : "Soldier, Rank-and-file 30",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[14]} ,
+
+                30 : { "name" : "Soldier, Rank-and-file 31",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[14]} ,
+
+                31 : { "name" : "Soldier, Rank-and-file 32",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[14]} ,
+
+                32 : { "name" : "Soldier, Rank-and-file 33",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[15]} ,
+
+                33 : { "name" : "Soldier, Rank-and-file 34",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[15]} ,
+
+                34 : { "name" : "Soldier, Rank-and-file 35",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[15]} ,
+
+                35 : { "name" : "Soldier, Rank-and-file 36",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[15]} ,
+
+                36 : { "name" : "Soldier, Rank-and-file 37",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[15]} ,
+
+                37 : { "name" : "Soldier, Rank-and-file 38",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[15]} ,
+
+                38 : { "name" : "Soldier, Rank-and-file 39",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[15]} ,
+
+                39 : { "name" : "Soldier, Rank-and-file 40",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[15]} ,
+
+                40 : { "name" : "Soldier, Rank-and-file 41",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[21]} ,
+
+                41 : { "name" : "Soldier, Rank-and-file 42",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[21]} ,
+
+                42 : { "name" : "Soldier, Rank-and-file 43",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[21]} ,
+
+                43 : { "name" : "Soldier, Rank-and-file 44",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[21]} ,
+
+                44 : { "name" : "Soldier, Rank-and-file 45",
+                       "brawn" : 5,
+                       "daring" : 4,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[21]} ,
+
+                45 : { "name" : "Soldier, Rank-and-file 46",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[21]} ,
+
+                46 : { "name" : "Soldier, Rank-and-file 47",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 3,
+                       "sagacity" : 4,
+                       "cunning" : 4,
+                       "proficiency" : 4,
+                       "weapon" : MeleeWeapons[21]} ,
+
+                47 : { "name" : "Soldier, Rank-and-file 48",
+                       "brawn" : 4,
+                       "daring" : 5,
+                       "tenacity" : 4,
+                       "heart" : 4,
+                       "sagacity" : 3,
+                       "cunning" : 4,
+                       "proficiency" : 5,
+                       "weapon" : MeleeWeapons[21]}
+                }
 
     #Loop until dead.
     Dead = False
