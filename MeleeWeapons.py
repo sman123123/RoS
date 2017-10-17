@@ -15,7 +15,7 @@ class MeleeWeapon:
         self.metaltDR = metaltDR
         self.leathersDR = leathersDR
         self.leathertDR = leathertDR
-        self.AC
+        self.AC = AC
         self.OffAC = OffAC
         self.sOffAC = sOffAC
         self.tOffAC = tOffAC
@@ -27,7 +27,7 @@ class MeleeWeapon:
         self.switch1 = switch1
         self.switch2 = switch2
 
-x = print("The weapon doesn't have that stat.")
+x = 0
 
 ShortSword = MeleeWeapon("Short Sword", "A sword with a short, two-edged blade.", 2, 6, 0, 6, 1, 7, -2, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x)
 ArmingSword = MeleeWeapon("Arming Sword", "The basic, run-of-the-mill one-handed sword.", 3, 7, 1, 7, 1, 7, -1, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x)
@@ -57,6 +57,19 @@ FlangedMace = MeleeWeapon("Flanged Mace", "A mace with flanges to the sides of t
 SpikedMace = MeleeWeapon("Spiked Mace", "A mace with spikes for tearing grisly wounds.", 2, 6, 1, 7, -1, 9, 1, -1, x, x, x, x, x, x, 1, x, x, x, 1, 1, 1, x, x, x)
 WarFlail = MeleeWeapon("War-Flail", "A long staff with a much shorter, metal-shod stick with spikes all around affixed to its end by a very short length of chain; wielded with two hands.", 5, 7, 2, x, x, 8, 2, x, x, x, x, x, x, x, x, 1, x, x, 1, 1, 1, -1, x, x)
 Hatchet = MeleeWeapon("Hatchet", "An axe with a short haft.", 1, 6, 0, x, x, 8, -1, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x)
-MeleeWeapon(name, description, reach, sATN, sDR, tATN, tDR, DTN, bDR, armorsDR, armortDR, metalsDR, metaltDR, leathersDR, leathertDR, AC, OffAC, sOffAC, tOffAC, DefAC, shock, pain, BL, parry, switch1, switch2)
-MeleeWeapon(name, description, reach, sATN, sDR, tATN, tDR, DTN, bDR, armorsDR, armortDR, metalsDR, metaltDR, leathersDR, leathertDR, AC, OffAC, sOffAC, tOffAC, DefAC, shock, pain, BL, parry, switch1, switch2)
-MeleeWeapon(name, description, reach, sATN, sDR, tATN, tDR, DTN, bDR, armorsDR, armortDR, metalsDR, metaltDR, leathersDR, leathertDR, AC, OffAC, sOffAC, tOffAC, DefAC, shock, pain, BL, parry, switch1, switch2)
+HandAxe = MeleeWeapon("Hand-Axe", "A hatchet with a longer haft an slightly larger head.", 2, 7, 1, x, x, 9, 0, 1, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x)
+LongHaftedAxe1h = MeleeWeapon("Long-Hafted Axe, One-Handed", "An axe with a much longer handle and maybe a slightly larger head.", 3, 7, 1, x, x, 9, 0, 1, x, x, x, x, x, x, x, x, x, x, 1, x, x, x, 1, 1)
+LongHaftedAxe2hM = MeleeWeapon("Long-Hafted Axe, Two-Handed", "An axe with a much longer handle and maybe a slightly larger head.", 3, 7, 2, x, x, 7, 1, 1, x, x, x, x, x, x, x, x, x, x, 1, x, x, x, 1, 1)
+LongHaftedAxe2hL = MeleeWeapon("Long-Hafted Axe, Two-Handed", "An axe with a much longer handle and maybe a slightly larger head.", 4, 8, 3, x, x, 8, 2, 1, x, x, x, x, x, x, x, x, x, x, 1, x, x, x, 1, 1)
+GreatAxeM = MeleeWeapon("Great Axe", "A long-hafted axe with perhaps a slightly longer haft and a bigger head, to be wielded with both hands.", 3, 7, 2, x, x, 7, 1, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, 1, x)
+GreatAxeL = MeleeWeapon("Great Axe", "A long-hafted axe with perhaps a slightly longer haft and a bigger head, to be wielded with both hands.", 4, 8, 4, x, x, 9, 2, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, 1, x)
+WarHammerHammer = MeleeWeapon("War-Hammer, Hammerhead", "A warhammer with a rather small, but powerful head, often with a beak opposite it.", 2, 6, 1, 8, -1, 9, 1, 1, x, x, x, x, x, x, x, x, x, x, 1, x, x, x, 1, x)
+WarHammerBeak = MeleeWeapon("War-Hammer, Beak", "A warhammer with a rather small, but powerful head, often with a beak opposite it.", 2, 7, 1, 8, -1, 9, 1, 1, x, x, x, x, x, x, x, x, x, x, x, x, x, x, 1, x)
+Quarterstaff = MeleeWeapon("Quarterstaff", "A stout staff, as tall as its wielder or slightly taller.", [3, 4], 6, 0, 6, 0, 5, 0, x, x, x, x, x, x, x, x, x, 1, x, x, x, x, x, x, x)
+ShortSpear1h = MeleeWeapon("Short Spear, One-Handed", "A spear, as tall as its wielder or slightly shorter.", 3, 8, 0, 7, 1, 7, 0, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, 1, x)
+ShortSpear2h = MeleeWeapon("Short Spear, Two-Handed", "A spear, as tall as its wielder or slightly shorter.", 3, x, x, 6, 1, 6, 0, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, 1, x)
+LongSpear1h = MeleeWeapon("Long Spear, One-Handed", "A spear, significantly taller than its wielder.", 4, 9, 0, 8, 1, 8, 0, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, 1, x)
+LongSpear2h = MeleeWeapon("Long Spear, Two-Handed", "A spear, significantly taller than its wielder.", [3, 4], x, x, 6, 1, 6, 0, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, 1, x)
+HalberdAxe = MeleeWeapon("Halberd, Axe-Blade", "A long spear with an axe-blade and a spike opposite that.", 5, 8, 4, 7, 1, 7, 2, 1, x, x, x, x, x, 1, x, x, x, x, x, x, x, x, 1, x)
+HalberdSpike = MeleeWeapon("Halberd, Back-Spike", "A long spear with an axe-blade and a spike opposite that.", 5, 8, 4, 7, 1, 7, 0, 1, x, x, x, x, x, 1, x, x, x, x, x, x, x, x, 1, x)
+Naginata = MeleeWeapon("Naginata", "A long spear with a long, one-edged, slightly curved blade, used with two hands for mostly slashing attacks.", [4, 5], 8, 3, 6, 1, 6, 0, x, -1, x, x, x, x, x, x, x, 1, x, x, x, x, x, x, x)
