@@ -1,6 +1,6 @@
 import random
 class Enemy:
-    def __init__(self, name, brawn, daring, tenacity, heart, sagacity, cunning, reflex, aim, knockdown, knockout, proficiency):
+    def __init__(self, name, brawn, daring, tenacity, heart, sagacity, cunning, reflex, aim, knockdown, knockout, proficiency, MP):
         self.name = name
         self.brawn = brawn
         self.daring = daring
@@ -13,6 +13,7 @@ class Enemy:
         self.knockdown = knockdown
         self.knockout = knockout
         self.proficiency = proficiency
+        self.MP = MP
         
 #Reflex = (Cunning + Daring)/2
 #Aim = (Sagacity + Cunning)/2
@@ -37,5 +38,7 @@ if RandDG == 4:
     RandRef = 4
 elif RandDG == 5:
     RandRef = 5
+RandProf = random.randint(4, 5)
+RandMP = RandProf + RandRef
 
-Slave = Enemy("Slave", RandBN, RandDG, 4, RandHT, RandSY, 4, RandRef, 4, RandKD, RandKO, random.randint(4, 5))
+Slave = Enemy("Slave", RandBN, RandDG, 4, RandHT, RandSY, 4, RandRef, 4, RandKD, RandKO, RandProf, RandMP)

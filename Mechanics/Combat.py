@@ -138,7 +138,25 @@ elif Defender == True:
 #If both combatants declare as aggressors, Offensive Maneuvers and assigned dice are announced before the Reflex Check to see who goes fractionally first. The combatant with the higher Reflex may choose whether to declare first or second; tied Reflex scores are broken by the higher CG score, and tied CG scores by the higher Proficiency.
 if Attacker == True and EnemyAttacker == True:
     #Enemy must announce maneuver type and spent MP.
+    if GladiatorMain.EnemyWeapon.name == "Gladius" and GladiatorMain.EnemyShield[0] == "no":
+        CurrentEnemyManeuver = random.randint(1, 2)
+        if CurrentEnemyManeuver == 1:
+            CurrentEnemyManeuver = OffensiveManeuvers.Cut
+            print("The Slave immediately leaps at you, swinging a wide cut!")
+        elif CurrentEnemyManeuver == 2:
+            CurrentEnemyManeuver = OffensiveManeuvers.Thrust
+            print("The Slave immediately lunges at you, stabbing fiercely!")
+        EnemySpentMP = random.randint((round(GladiatorMain.Enemy.MP/3, 0)), (GladiatorMain.Enemy.MP - 3))
+        print("The Slave commits " + str(EnemySpentMP) + " points to the attack!")
+    if GladiatorMain.EnemyWeapon.name == "Gladius" and GladiatorMain.EnemyShield[0] == "buckler" or GladiatorMain.EnemyWeapon.name == "Gladius" and GladiatorMain.EnemyShield[0] == "small" or GladiatorMain.EnemyWeapon.name == "Gladius" and GladiatorMain.EnemyShield[0] == "large":
+        CurrentEnemyManeuver = OffensiveManeuvers.SimBlkStk
+        print("The Slave leaps at you, swinging and bringing his shield up to block simultaneously!")
+    EnemySpentMP = random.randint((round(GladiatorMain.Enemy.MP/2, 0)), (GladiatorMain.Enemy.MP - 3))
+    print("ASFDASDASD")
+CurrentEnemyMP = GladiatorMain.Enemy.MP - EnemySpentMP
+elif Attacker == True and EnemyAttacker == False:
     pass
+    
 #An Opposed Reflex Check (with the combatants’ own ATNs for Target Numbers— see the Appendix for weapon ATNs) then determines whose strike lands first. For every step of Reach difference of the weapons used, the wielder of the longer weapon receives 1 bonus dice to this Check, and the wielder of the shorter weapon is penalized 1 die. In the rare cases where the combat begins at the optimum engagement range of the shorter Reach weapon, these modifiers are reversed.
 
 #Note that no defense is possible in the middle of an attack, so the loser of this Check will likely be killed. In the Exchange that follows, the winner of this Exchange now assumes the role of aggressor and his opponent that of defender. Should the Opposed Reflex Check be tied, both combatants strike at exactly the same time.
